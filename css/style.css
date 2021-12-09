@@ -1,0 +1,1119 @@
+*{margin: 0; padding: 0; border: none; outline: none; box-sizing: border-box; -webkit-tap-highlight-color: transparent; text-decoration: none; list-style: none; font-family: Roboto, sans-serif;}
+
+@font-face{font-family: Roboto; src: url(../font/Roboto/Roboto-Regular.ttf);}
+
+::-webkit-scrollbar{width: 4px; background-color: rgba(0, 0, 0, 0.88);}
+::-webkit-scrollbar-thumb{width: 4px; border-radius: 2px; background-color: rgb(50, 50, 50);}
+
+::-moz-selection{color: white; background-color: #fdd7e4d2;}
+::selection{color: white; background-color: #fdd7e4c7;}
+
+
+
+/*OPENVERSE*/
+
+
+#openverse{width: auto; min-height: 100vh; background: linear-gradient(rgb(10, 10, 10), rgb(20, 30, 40));}
+#openverse #one{width: 100%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 100px 0 60px 0; }
+#openverse #one h1{width: 80%; text-align: center; letter-spacing: 1px; color: white;}
+#openverse #one span{width: 80%; font-size: 14px; color: rgb(220, 220, 220);}
+/*OPENVERSE*/
+
+
+
+
+
+
+
+#menu{width: 100%; height: 100vh; position: fixed; z-index: 4; display: flex; justify-content: flex-end; align-items: flex-start; margin-top: -200vh; backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.88); transition: all 1s;}
+#menu #closemenucon{width: 100%; height: 48px; position: fixed; display: flex; justify-content: flex-end; align-items: center; padding-right: 16px;}
+#menu #closemenucon #closemenu{width: 30px; height: 30px; display: flex; justify-content: center; align-items: center;}
+#menu #closemenucon #closemenu:hover{cursor: pointer;}
+#menu #closemenucon #closemenu #closeone{width: 24px; height: 1px; position: absolute; transform: rotate(-45deg); margin-bottom: 0; border-radius: 1px; background-color: rgb(220, 220, 220); transition: all 0.24s;}
+#menu #closemenucon #closemenu #closetwo{width: 24px; height: 1px; position: absolute; transform: rotate(45deg); border-radius: 1px; background-color: rgb(220, 220, 220); transition: all 0.24s;}
+#menu #closemenucon #closemenu:hover #closeone{background-color: white;}
+#menu #closemenucon #closemenu:hover #closetwo{background-color: white;}
+#menu ul{width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: column;}
+#menu ul a{width: 100%; min-height: 50px; display: flex; justify-content: center; align-items: center; background-color: transparent;}
+#menu ul li{width: 100%; height: 50px; position: absolute; z-index: 2; display: flex; justify-content: center; align-items: center; padding-left: 20px; color: rgb(220, 220, 220); transition: all 0.24s;}
+#menu ul li:hover{width: 100%; height: 50px; position: absolute; z-index: 2; display: flex; justify-content: center; align-items: center; color: rgb(255, 255, 255); background-color: rgba(255, 255, 255, 0.010);}
+
+header{width: 100%; height: 48px; position: fixed; z-index: 1; user-select: none; display: flex; justify-content: space-between; align-items: center; flex-direction: row; backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.88);}
+header figure{display: flex; justify-content: center; align-items: center;position: absolute; left: 30px; top: 16px; margin-left: 14px; font-size: 14px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: rgb(220, 220, 220);}
+header figure:hover{cursor: pointer;}
+
+
+/*  CF CF CF
+
+#cf1{color: white; animation-name: cf1; animation-duration: 8s; animation-iteration-count: infinite; color: #12c2e9;}
+
+#cf2{color: white; animation-name: cf2; animation-duration: 8s; animation-iteration-count: infinite; color: #c471ed;}
+
+#cf3{color: white; animation-name: cf3; animation-duration: 8s; animation-iteration-count: infinite; color: #f64f59;}
+
+#cf4{color: white; animation-name: cf4; animation-duration: 8s; animation-iteration-count: infinite; color: #4A00E0;}
+
+
+@keyframes cf1
+{
+    20%{transform: scale(0.9); color: #12c2e9; text-shadow: 0 0 10px #12c2e9;}
+    40%{transform: scale(1); color: #12c2e9;}
+    60%{transform: scale(1); color: #12c2e9;}
+    80%{transform: scale(1); color: #12c2e9;}
+}
+
+
+@keyframes cf2
+{
+    20%{transform: scale(1);}
+    40%{transform: scale(0.9); text-shadow: 0 0 10px #c471ed;}
+    60%{transform: scale(1);}
+    80%{transform: scale(1);}    
+}
+
+@keyframes cf3
+{
+    20%{transform: scale(1);}
+    40%{transform: scale(1); }
+    60%{transform: scale(0.9); text-shadow: 0 0 10px #f64f59;}
+    80%{transform: scale(1);}
+}
+
+@keyframes cf4
+{
+    20%{transform: scale(1);}
+    40%{transform: scale(1);}
+    60%{transform: scale(1);}
+    80%{transform: scale(0.9); text-shadow: 0 0 10px #4A00E0;}
+}
+
+*/
+
+
+header ul{display: flex; justify-content: center; align-items: center; flex-direction: row;}
+header ul li{width: auto; height: 32px; display: flex; justify-content: center; align-items: center; margin: 0 8px 0 8px; padding: 10px 16px 10px 16px; font-size: 10.8px; border-radius: 16px; letter-spacing: 0.4px; text-transform: uppercase; color: rgb(220, 220, 220); transition: all 0.24s;}
+header ul li:hover{color: white;}
+header ul div{width: auto; height: 24px; margin: 0 16px 0 8px; display: flex; justify-content: center; align-items: center; padding: 10px 18px 10px 18px; font-size: 12px; border-radius: 16px; letter-spacing: 0.4px; color: rgb(220, 220, 220); color: rgb(220, 220, 220); background-color: rgb(0, 120, 230); transition: all 0.24s;}
+header ul div:hover{cursor: pointer; background-color: rgb(0, 100, 200);}
+header #openmenu{display: none;}
+
+#socma{width: 60px; height: 280px; z-index: 3; position: fixed; display: flex; justify-content: center; align-items: center; flex-direction: column; right: 20px; bottom: calc(50% - 140px); border: 1px solid rgba(124, 76, 76, 0.2); border-radius: 16px; backdrop-filter: blur(20px); background-color: rgba(0, 0, 0, 0.1);}
+#socma a{width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; margin: 6px 0;}
+#socma a i{font-size: 16px; color: rgb(160, 160, 160); transition: all 0.24s;}
+#socma a:hover i{color: white;}
+
+
+#group{width: 100%; min-height: 100vh; display: flex; justify-content: flex-start; align-items: center; flex-direction: column;}
+#group #one{width: 100%; height: 500px; display: flex; justify-content: center; align-items: center; flex-direction: column; padding-top: 50px; border-bottom: 1px solid rgb(20, 20, 20); background: black;}
+#group #one i{font-size: 60px; background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+#group #one h1{margin: 20px 0; font-size: 40px; text-transform: uppercase; letter-spacing: 4px; background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+#group #one span{max-width: 800px; font-size: 16px; text-align: center; color: rgb(200, 200, 200);}
+
+#group #congl{width: 100%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: row; flex-wrap: wrap; padding: 60px 0 0 0; background: linear-gradient(rgb(5, 5, 10), rgb(0, 0, 0));}
+#group #conlg{width: 1400px; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: row; flex-wrap: wrap; padding: 60px 0 40px 0;}
+
+#group #two{min-width: 600px; width: 30%; height: auto; display: flex; justify-content: center; align-items: flex-start; flex-direction: column; margin: 20px; padding: 40px; border-radius: 30px; background: linear-gradient(45deg, #2193b0, #6dd5ed);)}
+#group #two h1{color: white; font-size: 22px; font-weight: normal; letter-spacing: 2px;}
+#group #two span{margin: 20px 0; font-size: 14px; color: rgb(240, 240, 240);}
+#group #two button{width: 160px; height: 52px; color: rgb(200, 200, 200); border: 1px solid rgb(0, 0, 0); font-size: 11px; text-transform: uppercase; letter-spacing: 2px; border-radius: 8px; backdrop-filter: blur(20px); background-color: black; transition: all 0.24s;}
+#group #two button:hover{width: 160px; height: 52px; cursor: pointer; color: white; border-radius: 8px; box-shadow: 0 0 60px black;}
+
+#group #three{min-width: 600px; width: 30%; height: auto; display: flex; justify-content: center; align-items: flex-start; flex-direction: column; margin: 20px; padding: 40px; border-radius: 30px; background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);}
+#group #three h1{color: white; font-size: 22px; font-weight: normal; letter-spacing: 2px;}
+#group #three h1 img{width: 28px; height: 28px; margin-bottom: -5px;}
+#group #three span{margin: 20px 0; font-size: 14px; color: rgb(240, 240, 240);}
+#group #three button{width: 160px; height: 52px; color: rgb(200, 200, 200); border: 1px solid rgb(0, 0, 0); font-size: 11px; text-transform: uppercase; letter-spacing: 2px; border-radius: 8px; backdrop-filter: blur(20px); background-color: black; transition: all 0.24s;}
+#group #three button:hover{width: 160px; height: 52px; cursor: pointer; color: white; border-radius: 8px; box-shadow: 0 0 60px black;}
+
+#group #four{min-width: 600px; width: 30%; height: auto; display: flex; justify-content: center; align-items: flex-start; flex-direction: column; margin: 20px; padding: 40px; border-radius: 30px; background: linear-gradient(45deg, red, deeppink);}
+#group #four h1{color: white; font-size: 22px; font-weight: normal; letter-spacing: 2px;}
+#group #four h1 img{width: 28px; height: 28px; margin-bottom: -5px;}
+#group #four span{margin: 20px 0; font-size: 14px; color: rgb(240, 240, 240);}
+#group #four button{width: 160px; height: 52px; color: rgb(200, 200, 200); border: 1px solid rgb(0, 0, 0); font-size: 11px; text-transform: uppercase; letter-spacing: 2px; border-radius: 8px; backdrop-filter: blur(20px); background-color: black; transition: all 0.24s;}
+#group #four button:hover{width: 160px; height: 52px; cursor: pointer; color: white; border-radius: 8px; box-shadow: 0 0 60px black;}
+
+#group #five{min-width: 600px; width: 30%; height: auto; display: flex; justify-content: center; align-items: flex-start; flex-direction: column; margin: 20px; padding: 40px; border-radius: 30px; background: linear-gradient(45deg, #2193b0, #6dd5ed);}
+#group #five h1{color: white; font-size: 22px; font-weight: normal; letter-spacing: 2px;}
+#group #five h1 img{width: 28px; height: 28px; margin-bottom: -5px;}
+#group #five span{margin: 20px 0; font-size: 14px; color: rgb(240, 240, 240);}
+#group #five button{width: 160px; height: 52px; color: rgb(200, 200, 200); border: 1px solid rgb(0, 0, 0); font-size: 11px; text-transform: uppercase; letter-spacing: 2px; border-radius: 8px; backdrop-filter: blur(20px); background-color: black; transition: all 0.24s;}
+#group #five button:hover{width: 160px; height: 52px; cursor: pointer; color: white; border-radius: 8px; box-shadow: 0 0 60px black;}
+
+#group #six{min-width: 600px; width: 30%; height: auto; display: flex; justify-content: center; align-items: flex-start; flex-direction: column; margin: 20px; padding: 40px; border-radius: 30px; background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);}
+#group #six h1{color: white; font-size: 22px; font-weight: normal; letter-spacing: 2px;}
+#group #six h1 img{width: 28px; height: 28px; margin-bottom: -5px;}
+#group #six span{margin: 20px 0; font-size: 14px; color: rgb(240, 240, 240);}
+#group #six button{width: 160px; height: 52px; color: rgb(200, 200, 200); border: 1px solid rgb(0, 0, 0); font-size: 11px; text-transform: uppercase; letter-spacing: 2px; border-radius: 8px; backdrop-filter: blur(20px); background-color: black; transition: all 0.24s;}
+#group #six button:hover{width: 160px; height: 52px; cursor: pointer; color: white; border-radius: 8px; box-shadow: 0 0 60px black;}
+
+#group #seven{min-width: 600px; width: 30%; height: auto; display: flex; justify-content: center; align-items: flex-start; flex-direction: column; margin: 20px; padding: 40px; border-radius: 30px; background: linear-gradient(45deg, red, deeppink);}
+#group #seven h1{color: white; font-size: 22px; font-weight: normal; letter-spacing: 2px;}
+#group #seven h1 img{width: 28px; height: 28px; margin-bottom: -5px;}
+#group #seven span{margin: 20px 0; font-size: 14px; color: rgb(240, 240, 240);}
+#group #seven button{width: 160px; height: 52px; color: rgb(200, 200, 200); border: 1px solid rgb(0, 0, 0); font-size: 11px; text-transform: uppercase; letter-spacing: 2px; border-radius: 8px; backdrop-filter: blur(20px); background-color: black; transition: all 0.24s;}
+#group #seven button:hover{width: 160px; height: 52px; cursor: pointer; color: white; border-radius: 8px; box-shadow: 0 0 60px black;}
+
+#group #social{width: calc(90% - 20px); height: 120px; display: flex; justify-content: center; align-items: center; flex-direction: row; margin-top: 20px; border-radius: 20px; background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);}
+#group #social a{width: 50px; height: 40px; display: flex; justify-content: center; align-items: center;}
+#group #social i{margin: 0 8px; font-size: 18px; color: rgb(220, 220, 220); transition: all 0.24s;}
+#group #social a:hover i{cursor: pointer; font-size: 18px; color: rgb(255, 255, 255);}
+
+
+#onemain{width: auto; height: auto;}
+#onemain #one{width: 100%; min-height: 800px; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 88px 0 0 0; background: linear-gradient(rgb(10, 20, 40), rgb(24, 24, 24));}
+#onemain #one #oneblur{width: 1200px; min-height: 540px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin-top: 20px; margin-bottom: 80px; padding: 88px 0 48px 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+#onemain #one #oneblur div{width: 164px; height: 164px; background: url(../image/png/logo.png) no-repeat; background-size: cover;}
+#onemain #one #oneblur h1{width: 90%; user-select: none; margin: 30px 0; font-size: 40px; text-align: center; text-transform: uppercase; letter-spacing: 4px; color: white;}
+#onemain #one #oneblur h4{width: 90%; font-size: 14px; text-align: center; color: rgb(220, 220, 220);}
+#onemain #one #oneblur #onecb{width: auto; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: row; flex-wrap: wrap; margin-top: 20px; padding: 20px;}
+#onemain #one #oneblur #onecb p{width: 160px; height: 50px; user-select: none; display: flex; justify-content: center; align-items: center; margin: 10px; border: 1px solid rgba(255, 255, 255, 0.1); font-size: 10px; letter-spacing: 1px; border-radius: 6px; color: rgb(160, 160, 160); box-shadow: 0 0 20px black; text-transform: uppercase; background-color: rgba(0, 0, 0, 0.2); transition: all 0.24s;}
+#onemain #one #oneblur #onecb p:hover{cursor: pointer; transform: scale(0.88);}
+
+#onemain #one #oneblur section{width: auto; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: row; margin-top: 10px; padding: 10px;}
+#onemain #one #oneblur section a:nth-child(1) span{width: 32px; height: 32px; display: flex; justify-content: center; align-items: center; border-radius: 16px; box-shadow: 0 0 8px black; backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.2); transition: all 0.24s;}
+#onemain #one #oneblur section a:nth-child(2) span{width: 32px; height: 32px; display: flex; justify-content: center; align-items: center; margin: 0 10px; border-radius: 16px; box-shadow: 0 0 8px black; backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.2); transition: all 0.24s;}
+#onemain #one #oneblur section a:nth-child(3) span{width: 32px; height: 32px; display: flex; justify-content: center; align-items: center; border-radius: 16px; box-shadow: 0 0 8px black; backdrop-filter: blur(10px); background-color: rgba(0, 0, 0, 0.2); transition: all 0.24s;}
+#onemain #one #oneblur section a span:hover{cursor: pointer; transform: scale(0.88);}
+#onemain #one #oneblur section a span i{color: rgb(200, 200, 200);}
+
+#onemain #one #audit{width: 100%; height: auto; display: flex; justify-content: center; align-items: center; padding: 80px 0;}
+#onemain #one #audit section{width: 1200px; height: 420px; display: flex; justify-content: center; align-items: center; flex-direction: column; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+#onemain #one #audit section i{margin-bottom: 20px; font-size: 40px; color: rgb(124, 240, 255); transition: all 0.24s;}
+#onemain #one #audit section a i{margin-bottom: 0; margin-right: 10px; font-size: 14px; color: rgb(100, 100, 100); transition: all 0.24s;}
+#onemain #one #audit section h1{font-size: 24px; letter-spacing: 2px; text-transform: uppercase; color: white;}
+#onemain #one #audit section span{width: 80%; margin: 30px 0 10px 0; font-size: 18px; text-align: center; color: rgb(100, 100, 100);}
+#onemain #one #audit section div{width: 160px; height: 50px; user-select: none; display: flex; justify-content: center; align-items: center; margin-top: 30px; border: 1px solid rgba(255, 255, 255, 0.1); font-size: 10px; letter-spacing: 1px; border-radius: 6px; color: rgb(160, 160, 160); box-shadow: 0 0 20px black; text-transform: uppercase; background-color: rgba(0, 0, 0, 0.2); transition: all 0.24s;}
+#onemain #one #audit section div:hover{cursor: pointer; border: 1px solid rgba(124, 240, 255, 0.1); transform: scale(0.88); color: rgb(124, 240, 255);}
+#onemain #one #audit section div:hover i{color: rgb(124, 240, 255);}
+
+
+#onemain #two{width: 100%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 60px 0 0 0; background-color: white;}
+#onemain #two h1{user-select: none; font-size: 40px; text-transform: uppercase; letter-spacing: 4px;}
+#onemain #two section{width: auto; height: auto; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; flex-wrap: wrap; padding: 40px 0 40px 0;}
+#onemain #two section div:hover{cursor: pointer;}
+#onemain #two section div:nth-child(1){width: 260px; height: 120px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 10px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 8px; background-color: rgba(255, 255, 255, 0.02);}
+#onemain #two section div:nth-child(1) i{font-size: 20px; border-radius: 8px; color: springgreen;}
+#onemain #two section div:nth-child(1) h4{margin: 4px 0; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(80, 80, 80);}
+#onemain #two section div:nth-child(1) h6{font-size: 14px; text-transform: uppercase; letter-spacing: 0.8px; color: black;}
+
+#onemain #two section div:nth-child(2){width: 260px; height: 120px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 10px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 8px; background-color: rgba(255, 255, 255, 0.02);}
+#onemain #two section div:nth-child(2) i{font-size: 20px; border-radius: 8px; color: red;}
+#onemain #two section div:nth-child(2) h4{margin: 4px 0; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(80, 80, 80);}
+#onemain #two section div:nth-child(2) h6{font-size: 14px; text-transform: uppercase; letter-spacing: 0.8px; color: black;}
+
+#onemain #two section div:nth-child(3){width: 260px; height: 120px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 10px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 8px; background-color: rgba(255, 255, 255, 0.02);}
+#onemain #two section div:nth-child(3) i{font-size: 20px; border-radius: 8px; color: darkorange;}
+#onemain #two section div:nth-child(3) h4{margin: 4px 0; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(80, 80, 80);}
+#onemain #two section div:nth-child(3) h6{font-size: 14px; text-transform: uppercase; letter-spacing: 0.8px; color: black;}
+
+#onemain #two section div:nth-child(4){width: 260px; height: 120px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 10px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 8px; background-color: rgba(255, 255, 255, 0.02);}
+#onemain #two section div:nth-child(4) i{font-size: 20px; border-radius: 8px; color: deeppink;}
+#onemain #two section div:nth-child(4) h4{margin: 4px 0; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(80, 80, 80);}
+#onemain #two section div:nth-child(4) h6{font-size: 14px; text-transform: uppercase; letter-spacing: 0.8px; color: black;}
+
+#onemain #three{width: 100%; height: auto; display: flex; justify-content: center; align-items: flex-start; flex-direction: row; margin: 0 auto 0 auto; padding: 80px 0 20px 0; background-color: white;}
+#onemain #three section:nth-child(1){width: 730px; height: 400px; display: flex; justify-content: center; align-items: flex-start; flex-direction: column; padding: 20px;}
+#onemain #three section:nth-child(1) h6{font-size: 16px; color: rgb(160, 160, 160);}
+#onemain #three section:nth-child(1) h2{margin: 16px 0; font-size: 36px; text-transform: uppercase; color: rgb(34, 34, 34);}
+#onemain #three section:nth-child(1) h4{width: 90%; font-size: 14px; color: rgb(140, 140, 140);}
+
+#onemain #three section:nth-child(2){width: 400px; height: 400px; display: flex; justify-content: center; align-items: center;}
+#onemain #three section:nth-child(2) div{width: 400px; height: 400px; background: url(../image/png/chart.png) no-repeat; background-size: cover;}
+
+#onemain #lock{width: 100%; height: auto; display: flex; justify-content: center; align-items: center; padding: 20px 0 80px 0; background-color: white;}
+#onemain #lock img{width: 600px; user-select: none; border-radius: 10px; box-shadow: 0 0 10px black;}
+
+
+#onemain #four{width: 100%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: white;}
+#onemain #four section{max-width: 1200px; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: row; flex-wrap: wrap; padding: 20px 0 60px 0;}
+#onemain #four section div{user-select: none; margin: 10px; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 8px; background-color: rgba(0, 0, 0, 0.02);}
+#onemain #four section div:nth-child(1){width: 200px; height: 60px; display: flex; justify-content: center; align-items: center; flex-direction: row; padding: 0 20px 0 20px;}
+#onemain #four section div:nth-child(1) p{width: 20px; height: 20px; border-radius: 10px; margin-right: 8px; background-color: rgba(0, 125, 254); box-shadow: 0 0 14px rgba(0, 125, 254);}
+
+#onemain #four section div:nth-child(2){width: 200px; height: 60px; display: flex; justify-content: center; align-items: center; flex-direction: row; padding: 0 20px 0 20px;}
+#onemain #four section div:nth-child(2) p{width: 20px; height: 20px; border-radius: 10px; margin-right: 8px; background-color: rgb(144, 0, 0); box-shadow: 0 0 14px rgb(144, 0, 0);}
+
+#onemain #four section div:nth-child(3){width: 200px; height: 60px; display: flex; justify-content: center; align-items: center; flex-direction: row; padding: 0 20px 0 20px;}
+#onemain #four section div:nth-child(3) p{width: 20px; height: 20px; border-radius: 10px; margin-right: 8px; background-color: rgb(254, 215, 0); box-shadow: 0 0 14px rgb(254, 215, 0);}
+
+#onemain #four section div:nth-child(4){width: 200px; height: 60px; display: flex; justify-content: center; align-items: center; flex-direction: row; padding: 0 20px 0 20px;}
+#onemain #four section div:nth-child(4) p{width: 20px; height: 20px; border-radius: 10px; margin-right: 8px; background-color: rgb(0, 147, 0); box-shadow: 0 0 14px rgb(0, 147, 0);}
+
+#onemain #four section div:nth-child(5){width: 200px; height: 60px; display: flex; justify-content: center; align-items: center; flex-direction: row; padding: 0 20px 0 20px;}
+#onemain #four section div:nth-child(5) p{width: 20px; height: 20px; border-radius: 10px; margin-right: 8px; background-color: rgb(80, 200, 134); box-shadow: 0 0 14px rgb(80, 200, 134);}
+
+#onemain #four section div:nth-child(6){width: 200px; height: 60px; display: flex; justify-content: center; align-items: center; flex-direction: row; padding: 0 20px 0 20px;}
+#onemain #four section div:nth-child(6) p{width: 20px; height: 20px; border-radius: 10px; margin-right: 8px; background-color: rgb(92, 92, 92); box-shadow: 0 0 14px rgb(92, 92, 92);}
+
+
+
+
+/*#PJ0*/
+
+#onemain #pj0{width: 100%; height: auto; background-size: cover; background: url(../image/png/mars.jpg) no-repeat; background-size: cover;}
+#onemain #pj0 #pj0blur{width: 100%; height: auto; backdrop-filter: blur(20px); padding: 60px 0;}
+#onemain #pj0 #pj0blur div:nth-child(1){width: 100%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column;}
+#onemain #pj0 #pj0blur div:nth-child(1) span{max-width: 860px; font-size: 14px; text-align: center; color: rgb(220, 220, 220);}
+
+#onemain #pj0 #pj0blur div:nth-child(2){width: 100%; height: 140px; display: flex; justify-content: center; align-items: center; flex-direction: row;}
+
+
+#onemain #pj0 #pj0blur div:nth-child(2) a:nth-child(1){width: 80px; height: 80px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 10px; border: 1px solid rgba(255, 255, 255, 0.4); border-radius: 4px; backdrop-filter: blur(16px); background-color: rgba(240, 240, 240, 0.1);}
+
+#onemain #pj0 #pj0blur div:nth-child(2) a:nth-child(1) i{display: flex; justify-content: center; align-items: center; font-size: 18px; color: #56CCF2;}
+
+#onemain #pj0 #pj0blur div:nth-child(2) a:nth-child(1) span{width: 80px; display: flex; justify-content: center; align-items: center; margin-top: 8px; font-size: 12px; letter-spacing: 2px;}
+
+
+
+
+#onemain #pj0 #pj0blur div:nth-child(2) a:nth-child(2){width: 80px; height: 80px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 10px; border: 1px solid rgba(255, 255, 255, 0.4); border-radius: 4px; backdrop-filter: blur(16px); background-color: rgba(240, 240, 240, 0.1);}
+
+#onemain #pj0 #pj0blur div:nth-child(2) a:nth-child(2) i{display: flex; justify-content: center; align-items: center; font-size: 18px; color: #20e3b2;}
+
+#onemain #pj0 #pj0blur div:nth-child(2) a:nth-child(2) span{width: 80px; display: flex; justify-content: center; align-items: center; margin-top: 8px; font-size: 12px; letter-spacing: 2px;}
+
+
+#onemain #pj0 #pj0blur div:nth-child(2) a:nth-child(3){width: 80px; height: 80px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 10px; border: 1px solid rgba(255, 255, 255, 0.4); border-radius: 4px; backdrop-filter: blur(16px); background-color: rgba(240, 240, 240, 0.1);}
+
+#onemain #pj0 #pj0blur div:nth-child(2) a:nth-child(3) i{display: flex; justify-content: center; align-items: center; font-size: 18px; color: #FFAFBD;}
+
+#onemain #pj0 #pj0blur div:nth-child(2) a:nth-child(3) span{width: 80px; display: flex; justify-content: center; align-items: center; margin-top: 8px; font-size: 12px; letter-spacing: 2px;}
+
+
+
+
+/*#PJ0*/
+
+
+
+
+
+
+/*#PJ1*/
+
+#onemain #pj1{width: 100%; height: auto; background-size: cover; background: url(../image/png/space3.jpg) no-repeat; background-size: cover;}
+#onemain #pj1 #pj1blur{width: 100%; height: auto; backdrop-filter: blur(20px); padding: 60px 0;}
+#onemain #pj1 #pj1blur div:nth-child(1){width: 100%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column;}
+#onemain #pj1 #pj1blur div:nth-child(1) span{max-width: 860px; font-size: 14px; text-align: center; color: rgb(220, 220, 220);}
+
+#onemain #pj1 #pj1blur div:nth-child(2){width: 100%; height: 140px; display: flex; justify-content: center; align-items: center; flex-direction: row;}
+
+
+#onemain #pj1 #pj1blur div:nth-child(2) a:nth-child(1){width: 80px; height: 80px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 10px; border: 1px solid rgba(255, 255, 255, 0.4); border-radius: 4px; backdrop-filter: blur(16px); background-color: rgba(240, 240, 240, 0.1);}
+
+#onemain #pj1 #pj1blur div:nth-child(2) a:nth-child(1) i{display: flex; justify-content: center; align-items: center; font-size: 18px; color: #56CCF2;}
+
+#onemain #pj1 #pj1blur div:nth-child(2) a:nth-child(1) span{width: 80px; display: flex; justify-content: center; align-items: center; margin-top: 8px; font-size: 12px; letter-spacing: 2px;}
+
+
+
+
+#onemain #pj1 #pj1blur div:nth-child(2) a:nth-child(2){width: 80px; height: 80px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 10px; border: 1px solid rgba(255, 255, 255, 0); border-radius: 4px; backdrop-filter: blur(16px); background-color: rgba(240, 240, 240, 0.1);}
+
+#onemain #pj1 #pj1blur div:nth-child(2) a:nth-child(2) i{display: flex; justify-content: center; align-items: center; font-size: 18px; color: #20e3b2;}
+
+#onemain #pj1 #pj1blur div:nth-child(2) a:nth-child(2) span{width: 80px; display: flex; justify-content: center; align-items: center; margin-top: 8px; font-size: 12px; letter-spacing: 2px;}
+
+
+#onemain #pj1 #pj1blur div:nth-child(2) a:nth-child(3){width: 80px; height: 80px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 10px; border: 1px solid rgba(255, 255, 255, 0.4); border-radius: 4px; backdrop-filter: blur(16px); background-color: rgba(240, 240, 240, 0.1);}
+
+#onemain #pj1 #pj1blur div:nth-child(2) a:nth-child(3) i{display: flex; justify-content: center; align-items: center; font-size: 18px; color: #FFAFBD;}
+
+#onemain #pj1 #pj1blur div:nth-child(2) a:nth-child(3) span{width: 80px; display: flex; justify-content: center; align-items: center; margin-top: 8px; font-size: 12px; letter-spacing: 2px;}
+
+
+
+
+/*#PJ1*/
+
+
+
+
+
+
+#onemain #hampstake{width: 100%; height: auto; display: flex; justify-content: center; align-items: center; padding: 100px 0 20px 0; background-color: rgb(10, 20, 40);}
+#onemain #hampstake section{width: 1060px; height: 780px; display: flex; justify-content: center; align-items: center; flex-direction: column; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+#onemain #hampstake #hm{width: 433px; height: 80px; margin-bottom: 10px; background: url(../image/png/PlaytoEarnLogo.png) no-repeat; background-size: cover;}
+#onemain #hampstake h1{width: 90%; font-size: 30px; text-align: center; letter-spacing: 2px; color: rgb(255, 255, 255);}
+#onemain #hampstake h4{width: 90%; margin: 10px 0 16px 0; font-size: 10px; letter-spacing: 1px; text-align: center; text-transform: uppercase; color: rgb(160, 160, 160);}
+#onemain #hampstake span{width: 80%; display: flex; justify-content: center; align-items: center; flex-direction: column; font-size: 14px; text-align: center; letter-spacing: 0.4px; color: rgb(220, 220, 220);}
+#onemain #hampstake img{width: 500px; user-select: none; margin: 40px 0 0 0; border-radius: 4px;}
+#onemain #hampstake div{width: 160px; height: 50px; user-select: none; display: flex; justify-content: center; align-items: center; margin-top: 50px; border: 1px solid rgba(255, 255, 255, 0.1); font-size: 10px; letter-spacing: 1px; border-radius: 6px; color: rgb(160, 160, 160); box-shadow: 0 0 20px black; text-transform: uppercase; background-color: rgba(0, 0, 0, 0.2); transition: all 0.24s;}
+#onemain #hampstake div:hover{cursor: pointer; transform: scale(0.88); border: 1px solid rgba(255, 192, 203, 0.1); color: pink;}
+#onemain #hampstake div i{margin-right: 10px; margin-bottom: 0; font-size: 14px; color: rgb(100, 100, 100); transition: all 0.24s;}
+#onemain #hampstake div:hover i{color: pink;}
+
+#onemain #five{width: 100%; height: auto; display: flex; justify-content: flex-start; align-items: center; flex-direction: column; padding-bottom: 80px; background: linear-gradient(rgb(10, 20, 40), rgb(24, 24, 24));}
+#onemain #five section:nth-child(1){width: 1200px; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 140px 0 60px 0;}
+#onemain #five section:nth-child(1) i{font-size: 64px; color: rgb(50, 220, 130);}
+#onemain #five section:nth-child(1) h1{margin: 10px 0; font-size: 40px; text-transform: uppercase; letter-spacing: 4px; color: white;}
+#onemain #five section:nth-child(1) h4{font-size: 12px; color: rgb(160, 160, 160);}
+
+#onemain #five section:nth-child(2){width: 1200px; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: row; flex-wrap: wrap;}
+#onemain #five section:nth-child(2) div{margin: 20px; transition: all 0.24s;}
+#onemain #five section:nth-child(2) div:nth-child(1){width: 500px; height: 300px; display: flex; justify-content: center; align-items: center; flex-direction: column; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+#onemain #five section:nth-child(2) div:nth-child(1) h2{user-select: none; font-size: 16px; text-transform: uppercase; color: white;}
+#onemain #five section:nth-child(2) div:nth-child(1) h4{margin: 10px 0; font-size: 16px; letter-spacing: 4px; text-transform: uppercase; color: rgb(160, 160, 160);}
+#onemain #five section:nth-child(2) div:nth-child(1) span i{height: 2px; font-size: 12px; margin: 0 4px 0 0; color: rgb(50, 220, 130);}
+#onemain #five section:nth-child(2) div:nth-child(1) span{width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column; font-size: 14px; text-align: center; color: rgb(220, 220, 220);}
+#onemain #five section:nth-child(2) div:nth-child(1) span p{width: 80%; font-size: 14px; margin: 2px 0; text-align: center; color: rgb(220, 220, 220);}
+#onemain #five section:nth-child(2) div:nth-child(1) i{margin-top: 20px; font-size: 48px; color: rgb(50, 220, 130);}
+
+#onemain #five section:nth-child(2) div:nth-child(2){width: 500px; height: 300px; display: flex; justify-content: center; align-items: center; flex-direction: column; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+#onemain #five section:nth-child(2) div:nth-child(2) h2{user-select: none; font-size: 16px; text-transform: uppercase; color: white;}
+#onemain #five section:nth-child(2) div:nth-child(2) h4{margin: 10px 0; font-size: 16px; letter-spacing: 4px; text-transform: uppercase; color: rgb(160, 160, 160);}
+#onemain #five section:nth-child(2) div:nth-child(2) span{width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column; font-size: 14px; text-align: center; color: rgb(220, 220, 220);}
+#onemain #five section:nth-child(2) div:nth-child(2) span p i{height: 2px; font-size: 12px; margin: 0 4px 0 0; color: rgb(100, 100, 100); filter: grayscale(0%);}
+
+#onemain #five section:nth-child(2) div:nth-child(2) span p{width: 80%; font-size: 14px; margin: 2px 0; text-align: center; color: rgb(220, 220, 220);}
+#onemain #five section:nth-child(2) div:nth-child(2) i{margin-top: 20px; font-size: 48px; color: rgba(50, 220, 129, 0.2); filter: grayscale(100%);}
+
+#onemain #five section:nth-child(2) div:nth-child(3){width: 500px; height: 300px; display: flex; justify-content: center; align-items: center; flex-direction: column; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+#onemain #five section:nth-child(2) div:nth-child(3) h2{user-select: none; font-size: 16px; text-transform: uppercase; color: white;}
+#onemain #five section:nth-child(2) div:nth-child(3) h4{margin: 10px 0; font-size: 16px; letter-spacing: 4px; text-transform: uppercase; color: rgb(160, 160, 160);}
+#onemain #five section:nth-child(2) div:nth-child(3) span{width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column; font-size: 14px; text-align: center; color: rgb(220, 220, 220);}
+#onemain #five section:nth-child(2) div:nth-child(3) span i{height: 2px; font-size: 12px; margin: 0 4px 0 0; color: rgb(100, 100, 100); filter: grayscale(0%);}
+
+#onemain #five section:nth-child(2) div:nth-child(3) span p{width: 80%; font-size: 14px; margin: 2px 0; text-align: center; color: rgb(220, 220, 220);}
+#onemain #five section:nth-child(2) div:nth-child(3) i{margin-top: 20px; font-size: 48px; color: rgba(50, 220, 129, 0.2); filter: grayscale(100%);}
+
+#onemain #five section:nth-child(2) div:nth-child(4){width: 500px; height: 300px; display: flex; justify-content: center; align-items: center; flex-direction: column; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+#onemain #five section:nth-child(2) div:nth-child(4) h2{user-select: none; font-size: 16px; text-transform: uppercase; color: white;}
+#onemain #five section:nth-child(2) div:nth-child(4) h4{margin: 10px 0; font-size: 16px; letter-spacing: 4px; text-transform: uppercase; color: rgb(160, 160, 160);}
+#onemain #five section:nth-child(2) div:nth-child(4) span{width: 100%; display: flex; justify-content: center; align-items: center; flex-direction: column; font-size: 14px; text-align: center; color: rgb(220, 220, 220);}
+#onemain #five section:nth-child(2) div:nth-child(4) span i{height: 2px; font-size: 12px; margin: 0 4px 0 0; color: rgb(100, 100, 100); filter: grayscale(0%);}
+
+#onemain #five section:nth-child(2) div:nth-child(4) span p{width: 80%; font-size: 14px; margin: 2px 0; text-align: center; color: rgb(220, 220, 220);}
+#onemain #five section:nth-child(2) div:nth-child(4) i{margin-top: 20px; font-size: 48px; color: rgba(50, 220, 129, 0.2); filter: grayscale(100%);}
+
+#onemain #six{width: 100%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: row; padding: 40px 0; background-color: rgb(24, 24, 24);}
+#onemain #six a:nth-child(1) div{width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; margin: 0 8px; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2); transition: all 0.24s;}
+#onemain #six a:nth-child(1) div:hover{transform: scale(0.88);}
+#onemain #six a:nth-child(1) div span{width: 24px; height: 24px; display: block; border-radius: 20px; background: url(../image/png/bscscan.png) no-repeat; background-size: cover;}
+
+#onemain #six a:nth-child(2) div{width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; margin: 0 8px; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2); transition: all 0.24s;}
+#onemain #six a:nth-child(2) div:hover{transform: scale(0.88);}
+#onemain #six a:nth-child(2) div span{width: 24px; height: 24px; display: block; border-radius: 20px; background: url(../image/png/poocoin.png) no-repeat; background-size: cover;}
+
+#onemain #six a:nth-child(3) div{width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; margin: 0 8px; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2); transition: all 0.24s;}
+#onemain #six a:nth-child(3) div:hover{transform: scale(0.88);}
+#onemain #six a:nth-child(3) div span{width: 28px; height: 28px; display: block; border-radius: 20px; background: url(../image/png/pancakeswap.png) no-repeat; background-size: cover;}
+
+#onemain #seven{width: 100%; height: 500px; display: flex; justify-content: center; align-items: center; padding-top: 80px; background: linear-gradient(rgb(24, 24, 24), rgb(10, 20, 40));}
+#onemain #seven section{width: 1060px; height: 420px; display: flex; justify-content: center; align-items: center; flex-direction: column; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+#onemain #seven section i{margin-right: 10px; font-size: 14px; color: rgb(100, 100, 100); transition: all 0.24s;}
+#onemain #seven section h1{font-size: 24px; letter-spacing: 2px; text-transform: uppercase; color: white;}
+#onemain #seven section span{width: 80%; margin: 30px 0 10px 0; font-size: 18px; text-align: center; color: rgb(100, 100, 100);}
+#onemain #seven section div{width: 160px; height: 50px; user-select: none; display: flex; justify-content: center; align-items: center; margin-top: 30px; border: 1px solid rgba(255, 255, 255, 0.1); font-size: 10px; letter-spacing: 1px; border-radius: 6px; color: rgb(160, 160, 160); box-shadow: 0 0 20px black; text-transform: uppercase; background-color: rgba(0, 0, 0, 0.2); transition: all 0.24s;}
+#onemain #seven section div:hover{cursor: pointer; border: 1px solid rgba(80, 200, 134, 0.1); transform: scale(0.88); color: rgb(80, 200, 134);}
+#onemain #seven section div:hover i{color: rgb(80, 200, 134);}
+
+#onemain #mail{width: 100%; height: auto; display: flex; justify-content: center; align-items: center; padding: 160px 0 60px 0; background: linear-gradient(rgb(10, 20, 40), rgb(24, 24, 24));}
+#onemain #mail form{width: 100%; height: auto; display: flex; justify-content: center; align-items: center;}
+#onemain #mail #mc_embed_signup{width: 1060px; min-height: 400px; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 60px 0 60px 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+#onemain #mail #mc_embed_signup_scroll{width: 100%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 20px;}
+#onemain #mail i{margin-bottom: 20px; font-size: 40px; color: slateblue;}
+#onemain #mail label{width: 90%; user-select: none; font-size: 34px; text-align: center; text-transform: uppercase; letter-spacing: 4px; color: white;}
+#onemain #mail h2{width: 90%; margin: 10px 0; font-size: 10px; text-align: center; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(160, 160, 160);}
+#onemain #mail #mce-EMAIL{width: 90%; height: 50px; margin-top: 20px; padding: 20px; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 48px; text-align: center; text-transform: uppercase; color: rgb(200, 200, 200); background-color: rgba(0, 0, 0, 0.4); transition: all 0.24s;}
+#onemain #mail #mce-EMAIL:focus{border: 1px solid rgba(255, 255, 255, 0.14); color: white; background-color: rgba(0, 0, 0, 0.5);}
+#onemain #mail #mc-embedded-subscribe{width: 160px; height: 50px; user-select: none; display: flex; justify-content: center; align-items: center; margin-top: 30px; border: 1px solid rgba(255, 255, 255, 0.1); font-size: 10px; letter-spacing: 1px; border-radius: 6px; color: rgb(160, 160, 160); box-shadow: 0 0 20px black; text-transform: uppercase; background-color: rgba(0, 0, 0, 0.2); transition: all 0.24s;}
+#onemain #mail #mc-embedded-subscribe:hover{cursor: pointer; transform: scale(0.88); border: 1px solid rgba(105, 90, 205, 0.1); color: slateblue;}
+
+
+#onemain #eight{width: 100%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; background: linear-gradient(rgb(24, 24, 24), rgb(10, 20, 40)); padding-bottom: 30px;}
+#onemain #eight h1{margin-top: 120px; font-size: 30px; letter-spacing: 1px; text-transform: uppercase; color: white;}
+#onemain #eight h6{margin-top: 4px; font-size: 10px; letter-spacing: 1px; text-transform: uppercase; color: rgb(124, 124, 124);}
+#onemain #eight section{width: 100%; height: auto; display: flex; justify-content: center; align-items: center; flex-wrap: wrap; margin-top: 20px; padding: 20px 0;}
+#onemain #eight section div{width: 360px; height: 360px;}
+#onemain #eight section div:nth-child(1){width: 360px; height: 360px; margin: 20px; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 20px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+#onemain #eight section div:nth-child(1) span:nth-child(1){width: 360px; height: 220px; display: flex; justify-content: center; align-items: center; border-top-left-radius: 20px; border-top-right-radius: 20px; background: linear-gradient(45deg, #009dffd5, #ec2f4bce);}
+#onemain #eight section div:nth-child(1) span:nth-child(1) #msone{width: 160px; height: 160px; display: flex; justify-content: center; align-items: center; margin: 0; padding: 0; border: 1px solid rgba(255, 255, 255, 0.1);  border-radius: 80px; background-color: rgba(10, 10, 20, 0.8);}
+#onemain #eight section div:nth-child(1) span:nth-child(1) #msone p{width: 120px; height: 120px; display: block; border-radius: 70px; box-shadow: none; background: url(../image/png/sivanokcu.png) no-repeat; background-size: cover;}
+
+#onemain #eight section div:nth-child(1) span:nth-child(2){width: 100%; height: 80px; display: flex; justify-content: center; align-items: flex-start; flex-direction: column; padding-left: 20px;}
+#onemain #eight section div:nth-child(1) span:nth-child(2) p:nth-child(1){font-size: 14px; user-select: none; font-weight: bold; margin-bottom: 2px; font-size: 16px; color: white;}
+#onemain #eight section div:nth-child(1) span:nth-child(2) p:nth-child(2){margin-top: 2px; font-size: 12px; font-weight: bold; color: rgb(160, 160, 160);}
+#onemain #eight section div:nth-child(1) span:nth-child(3){width: 100%; height: 60px; display: flex; justify-content: center; align-items: center; flex-direction: row; padding-bottom: 20px}
+#onemain #eight section div:nth-child(1) span:nth-child(3) a{width: 32px; height: 32px; display: flex; justify-content: center; align-items: center; margin: 0 8px; border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2); transition: all 0.24s;}
+#onemain #eight section div:nth-child(1) span:nth-child(3) a:hover{transform: scale(0.88);}
+#onemain #eight section div:nth-child(1) span:nth-child(3) a i{font-size: 14px; color: rgb(160, 160, 160);}
+
+#onemain #eight section div:nth-child(2){width: 360px; height: 360px; margin: 20px; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 20px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+#onemain #eight section div:nth-child(2) span:nth-child(1){width: 360px; height: 220px; display: flex; justify-content: center; align-items: center; border-top-left-radius: 20px; border-top-right-radius: 20px; background: linear-gradient(45deg, #009dffd5, #ec2f4bce);}
+#onemain #eight section div:nth-child(2) span:nth-child(1) #mstwo{width: 160px; height: 160px; display: flex; justify-content: center; align-items: center; margin: 0; padding: 0; border: 1px solid rgba(255, 255, 255, 0.1);  border-radius: 80px; background-color: rgba(10, 10, 20, 0.8);}
+#onemain #eight section div:nth-child(2) span:nth-child(1) #mstwo p{width: 120px; height: 120px; display: block; border-radius: 60px; box-shadow: none; background: url(../image/jpg/kaantosunoglu.jpg) no-repeat; background-size: cover;}
+
+#onemain #eight section div:nth-child(2) span:nth-child(2){width: 100%; height: 80px; display: flex; justify-content: center; align-items: flex-start; flex-direction: column; padding-left: 20px;}
+#onemain #eight section div:nth-child(2) span:nth-child(2) p:nth-child(1){font-size: 14px; user-select: none; font-weight: bold; margin-bottom: 2px; font-size: 16px; color: white;}
+#onemain #eight section div:nth-child(2) span:nth-child(2) p:nth-child(2){margin-top: 2px; font-size: 12px; font-weight: bold; color: rgb(160, 160, 160);}
+#onemain #eight section div:nth-child(2) span:nth-child(3){width: 100%; height: 60px; display: flex; justify-content: center; align-items: center; flex-direction: row; padding-bottom: 20px}
+#onemain #eight section div:nth-child(2) span:nth-child(3) a{width: 32px; height: 32px; display: flex; justify-content: center; align-items: center; margin: 0 8px; border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2); transition: all 0.24s;}
+#onemain #eight section div:nth-child(2) span:nth-child(3) a:hover{transform: scale(0.88);}
+#onemain #eight section div:nth-child(2) span:nth-child(3) a i{font-size: 14px; color: rgb(160, 160, 160);}
+
+#onemain #eight section div:nth-child(2){width: 360px; height: 360px; margin: 20px; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 20px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+#onemain #eight section div:nth-child(2) span:nth-child(1){width: 360px; height: 220px; display: flex; justify-content: center; align-items: center; border-top-left-radius: 20px; border-top-right-radius: 20px; background: linear-gradient(45deg, #009dffd5, #ec2f4bce);}
+#onemain #eight section div:nth-child(2) span:nth-child(1) #msthree{width: 160px; height: 160px; display: flex; justify-content: center; align-items: center; margin: 0; padding: 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 80px; background-color: rgba(10, 10, 20, 0.8);}
+#onemain #eight section div:nth-child(2) span:nth-child(1) #msthree p{width: 120px; height: 120px; display: block; border-radius: 60px; box-shadow: none; background: url(../image/png/masos.png) no-repeat; background-size: cover;}
+#onemain #eight section div:nth-child(2) span:nth-child(2){width: 100%; height: 80px; display: flex; justify-content: center; align-items: flex-start; flex-direction: column; padding-left: 20px;}
+#onemain #eight section div:nth-child(2) span:nth-child(2) p:nth-child(1){font-size: 14px; user-select: none; font-weight: bold; margin-bottom: 2px; font-size: 16px; color: white;}
+#onemain #eight section div:nth-child(2) span:nth-child(2) p:nth-child(2){margin-top: 2px; font-size: 12px; font-weight: bold; color: rgb(160, 160, 160);}
+#onemain #eight section div:nth-child(2) span:nth-child(3){width: 100%; height: 60px; display: flex; justify-content: center; align-items: center; flex-direction: row; padding-bottom: 20px}
+#onemain #eight section div:nth-child(2) span:nth-child(3) a{width: 32px; height: 32px; display: flex; justify-content: center; align-items: center; margin: 0 8px; border-radius: 16px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2); transition: all 0.24s;}
+#onemain #eight section div:nth-child(2) span:nth-child(3) a:hover{transform: scale(0.88);}
+#onemain #eight section div:nth-child(2) span:nth-child(3) a i{font-size: 14px; color: rgb(160, 160, 160);}
+
+/*MAINTWO*/
+
+#twomain{width: auto; height: auto;}
+#twomain #one{width: 100%; height: auto; background: linear-gradient(rgb(10, 20, 40), rgb(24, 24, 24));}
+#twomain #one section{width: 100%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 148px 0 110px 0;}
+#twomain #one section #hm{width: 649px; height: 120px; background: url(../image/png/PlaytoEarnLogo.png) no-repeat; background-size: cover;}
+#twomain #one section h1{width: 90%; margin: 20px 0 0 0; font-size: 40px; text-align: center; letter-spacing: 4px; color: white;}
+#twomain #one section h4{width: 80%; margin-top: 20px; font-size: 12px; text-align: center; letter-spacing: 0.8px; color: rgb(200, 200, 200);}
+#twomain #one section div{width: auto; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: row; flex-wrap: wrap; margin-top: 20px;}
+#twomain #one section div span{width: 160px; height: 50px; user-select: none; display: flex; justify-content: center; align-items: center; margin: 10px; border: 1px solid rgba(255, 255, 255, 0.1); font-size: 10px; letter-spacing: 1px; border-radius: 6px; color: rgb(160, 160, 160); box-shadow: 0 0 20px black; text-transform: uppercase; background-color: rgba(0, 0, 0, 0.2); transition: all 0.24s;}
+#twomain #one section div span:hover{cursor: pointer; transform: scale(0.88); border: 1px solid rgba(255, 192, 203, 0.1); color: pink;}
+#twomain #one section div span:hover i{color: pink;}
+#twomain #one section div i{margin-right: 10px; font-size: 14px; color: rgb(100, 100, 100); transition: all 0.24s;}
+
+#twomain #disc{width: 100%; height: auto; display: flex; justify-content: center;}
+#twomain #disccon{width: 1200px; height: auto; display: flex; justify-content: center; flex-direction: row; flex-wrap: wrap; padding: 80px 0 20px 0;}
+#twomain #disc #disccon section:nth-child(1){width: 400px; height: 400px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 20px; padding: 20px 0; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 30px; background-color: rgba(0, 0, 0, 0.02); transition: all 0.24s;}
+#twomain #disc #disccon section:nth-child(1) div{width: 120px; height: 120px; background: url(../image/png/square1.png) no-repeat; background-size: cover;}
+#twomain #disc #disccon section:nth-child(1) h1{width: 90%; margin: 20px 0 10px 0; font-size: 24px; text-align: center; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(80, 80, 80);}
+#twomain #disc #disccon section:nth-child(1) span{width: 80%; margin: 10px 0; font-size: 14px; text-align: center; letter-spacing: 0.8px;}
+
+#twomain #disc #disccon section:nth-child(2){width: 400px; height: 400px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 20px; padding: 20px 0; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 30px; background-color: rgba(0, 0, 0, 0.02); transition: all 0.24s;}
+#twomain #disc #disccon section:nth-child(2) div{width: 120px; height: 120px; background: url(../image/png/square3.png) no-repeat; background-size: cover;}
+#twomain #disc #disccon section:nth-child(2) h1{width: 90%; margin: 20px 0 10px 0; font-size: 24px; text-align: center; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(80, 80, 80);}
+#twomain #disc #disccon section:nth-child(2) span{width: 80%; margin: 10px 0; font-size: 14px; text-align: center; letter-spacing: 0.8px;}
+
+#twomain #disc #disccon section:nth-child(3){width: 840px; height: 400px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 20px; padding: 20px 0; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 30px; background-color: rgba(0, 0, 0, 0.02); transition: all 0.24s;}
+#twomain #disc #disccon section:nth-child(3) div{width: 120px; height: 120px; background: url(../image/png/square2.png) no-repeat; background-size: cover;}
+#twomain #disc #disccon section:nth-child(3) h1{width: 90%; margin: 20px 0 10px 0; font-size: 24px; text-align: center; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(80, 80, 80);}
+#twomain #disc #disccon section:nth-child(3) span{width: 80%; margin: 10px 0; font-size: 14px; text-align: center; letter-spacing: 0.8px;}
+
+
+#twomain #two{width: 100%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 80px 0 80px 0;}
+#twomain #two section{width: 1200px; min-height: 540px; display: flex; justify-content: center; align-items: center; flex-direction: column; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); backdrop-filter: blur(100px); background: linear-gradient(rgba(255, 0, 0, 0.8), rgba(255, 20, 145, 0.8));}
+#twomain #two section i{margin-bottom: 40px; font-size: 60px; color: white;}
+#twomain #two section h1{width: 90%; font-size: 20px; text-align: center; text-transform: uppercase; letter-spacing: 0.8px; color: white;}
+#twomain #two section h2{width: 90%; margin: 14px 0; font-size: 14px; text-align: center; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(220, 220, 220);}
+#twomain #two section span{width: 80%; font-size: 14px; text-align: center; letter-spacing: 0.4px; color: white;}
+
+#twomain #three{width: 100%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; flex-wrap: wrap; padding: 60px 0; background: linear-gradient(rgb(10, 20, 40), rgb(24, 24, 24));}
+#twomain #three h1{width: 90%; margin: 40px 0 60px 0; font-size: 40px; text-align: center; text-transform: uppercase; letter-spacing: 4px; color: white;}
+#twomain #three section{width: 1240px; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: row; flex-wrap: wrap;}
+#twomain #three section section:nth-child(1){max-width: 560px; min-height: 500px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 30px; padding: 40px 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+#twomain #three section section:nth-child(1) div{width: 140px; height: 140px; background: url(../image/gif/Chubbies.gif) no-repeat; background-size: cover;}
+#twomain #three section section:nth-child(1) h2{width: 90%; margin: 14px 0; font-size: 24px; text-align: center; text-transform: uppercase; letter-spacing: 0.8px; color: white;}
+#twomain #three section section:nth-child(1) span{width: 80%; font-size: 14px; text-align: center; letter-spacing: 0.4px; color: rgb(220, 220, 220);}
+
+#twomain #three section section:nth-child(2){max-width: 560px; min-height: 500px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 30px; padding: 40px 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+#twomain #three section section:nth-child(2) div{width: 140px; height: 140px; background: url(../image/gif/Chubbies2.gif) no-repeat; background-size: cover;}
+#twomain #three section section:nth-child(2) h2{width: 90%; margin: 14px 0; font-size: 24px; text-align: center; text-transform: uppercase; letter-spacing: 0.8px; color: white;}
+#twomain #three section section:nth-child(2) span{width: 80%; font-size: 14px; text-align: center; letter-spacing: 0.4px; color: rgb(220, 220, 220);}
+
+#twomain #three section section:nth-child(3){max-width: 560px; min-height: 500px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 30px; padding: 40px 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+#twomain #three section section:nth-child(3) i{margin-bottom: 10px; font-size: 60px; color: rgb(10, 160, 150);}
+#twomain #three section section:nth-child(3) h2{width: 90%; margin: 14px 0; font-size: 24px; text-align: center; text-transform: uppercase; letter-spacing: 0.8px; color: white;}
+#twomain #three section section:nth-child(3) span{width: 80%; font-size: 14px; text-align: center; letter-spacing: 0.4px; color: rgb(220, 220, 220);}
+
+#twomain #three section section:nth-child(4){max-width: 560px; min-height: 500px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 30px; padding: 40px 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+#twomain #three section section:nth-child(4) i{margin-bottom: 10px; font-size: 60px; color: rgb(160, 10, 97);}
+#twomain #three section section:nth-child(4) h2{width: 90%; margin: 14px 0; font-size: 24px; text-align: center; text-transform: uppercase; letter-spacing: 0.8px; color: white;}
+#twomain #three section section:nth-child(4) span{width: 80%; font-size: 14px; text-align: center; letter-spacing: 0.4px; color: rgb(220, 220, 220);}
+
+#twomain #three section section:nth-child(5){max-width: 1180px; min-height: 500px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 30px; padding: 40px 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+#twomain #three section section:nth-child(5) div{width: 140px; height: 155px; background: url(../image/png/home.png) no-repeat; background-size: cover;}
+#twomain #three section section:nth-child(5) h2{width: 90%; margin: 14px 0; font-size: 24px; text-align: center; text-transform: uppercase; letter-spacing: 0.8px; color: white;}
+#twomain #three section section:nth-child(5) span{width: 80%; font-size: 14px; text-align: center; letter-spacing: 0.4px; color: rgb(220, 220, 220);}
+
+#twomain #four{width: 100%; height: auto; display: flex; margin-top: -1px; justify-content: center; align-items: center; flex-direction: column; background: linear-gradient(rgb(24, 24, 24), rgb(10, 20, 40));}
+#twomain #four section{width: 1200px; min-height: 540px; display: flex; justify-content: center; align-items: center; flex-direction: row; flex-wrap: wrap; margin: 0 0 60px 0; padding: 60px 0 60px 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+#twomain #four section h1{width: 90%; font-size: 24px; text-align: center; text-transform: uppercase; letter-spacing: 4px; color: white;}
+#twomain #four section h4{width: 90%; user-select: none; margin: 10px 0; font-size: 14px; text-align: center; text-transform: uppercase; letter-spacing: 4px; color: rgb(160, 160, 160);}
+#twomain #four section span{width: 90%; font-size: 14px; text-align: center; letter-spacing: 0.8px; color: rgb(220, 220, 220);}
+#twomain #four section div:nth-child(4){width: 400px; height: 225px; margin: 30px; border-radius: 4px; background: url(../image/png/et4.jpg) no-repeat; background-size: cover;}
+#twomain #four section p:nth-child(5){width: 336px; height: 225px; margin: 30px; border-radius: 4px; background: url(../image/png/et5.jpg) no-repeat; background-size: cover;}
+
+#twomain #four section div:nth-child(6){width: 400px; height: 225px; margin: 30px; border-radius: 4px; background: url(../image/png/et1.jpg) no-repeat; background-size: cover;}
+#twomain #four section p:nth-child(7){width: 336px; height: 225px; margin: 30px; border-radius: 4px; background: url(../image/png/et3.jpg) no-repeat; background-size: cover;}
+
+/*MAINTWO*/
+
+
+
+
+
+/*MAINTHREE*/
+
+#threemain{width: 100%; min-height: 100vh; display: flex; justify-content: center; align-items: center; padding: 108px 0 60px; background: linear-gradient(rgb(10, 20, 40), rgb(24, 24, 24));}
+#threemain section{width: 1200px; min-height: 540px; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 88px 0 48px 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+#threemain div{width: 200px; height: 200px; background: url(../image/png/logo.png) no-repeat; background-size: cover;}
+#threemain h1{width: 90%; user-select: none; margin: 20px 0 10px 0; font-size: 30px; text-align: center; letter-spacing: 1px; text-transform: uppercase; color: white;}
+#threemain h2{width: 90%; user-select: none; font-size: 20px; text-align: center; letter-spacing: 4px; text-transform: uppercase; color: rgb(200, 200, 200);}
+
+/*MAINTHREE*/
+
+
+
+
+
+/*MAINFOUR*/
+
+#mainfour{width: 100%; min-height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 108px 0 60px 0; background: linear-gradient(rgb(10, 20, 40), rgb(24, 24, 24));}
+#mainfour section:nth-child(1){width: 1200px; min-height: 300px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin-bottom: 40px; padding: 30px 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+#mainfour section:nth-child(1) #mfon{width: 140px; height: 140px; margin: 0 0 20px 0; padding: 0; border: none; box-shadow: none; background: url(../image/png/logo.png) no-repeat; background-size: cover;}
+#mainfour section:nth-child(1) h2{width: 90%; font-size: 34px; text-align: center; text-transform: uppercase; letter-spacing: 0.8px; color: white;}
+#mainfour section:nth-child(1) span{width: 80%; margin-top: 16px; font-size: 14px; text-align: center; letter-spacing: 0.8px; color: rgb(220, 220, 220);}
+#mainfour section:nth-child(1) div{width: 160px; height: 50px; user-select: none; display: flex; justify-content: center; align-items: center; margin-top: 30px; border: 1px solid rgba(255, 255, 255, 0.1); font-size: 10px; letter-spacing: 1px; border-radius: 6px; color: rgb(160, 160, 160); box-shadow: 0 0 20px black; text-transform: uppercase; background-color: rgba(0, 0, 0, 0.2); transition: all 0.24s;}
+#mainfour section:nth-child(1) div:hover{cursor: pointer; border: 1px solid rgba(255, 192, 203, 0.1); transform: scale(0.88); color: pink;}
+
+
+
+#mainfour section:nth-child(2){width: 1200px; min-height: 340px; /*540*/ display: flex; justify-content: flex-start; align-items: center; flex-direction: column; flex-wrap: wrap; padding-top: 30px; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+#mainfour section:nth-child(2) div:nth-child(1){width: 100%; height: 40px; display: flex; justify-content: flex-start; align-items: center; flex-direction: row; margin-bottom: 20px;}
+#mainfour section:nth-child(2) div:nth-child(1) span:nth-child(1){user-select: none; margin-left: 100px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(200, 200, 200);}
+#mainfour section:nth-child(2) div:nth-child(1) span:nth-child(2){user-select: none; margin-left: 400px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(200, 200, 200);}
+#mainfour section:nth-child(2) div:nth-child(1) span:nth-child(3){user-select: none; margin-left: 400px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(200, 200, 200);}
+
+#mainfour table{width: 100%; height: auto;}
+#mainfour table tr:nth-child(1){width: 100%; height: 40px; display: flex; justify-content: center; align-items: center; flex-direction: row;}
+#mainfour table tr:nth-child(1) td{width: 400px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(200, 200, 200);}
+
+#mainfour table tr:nth-child(2){width: 100%; height: 40px; display: flex; justify-content: center; align-items: center; flex-direction: row; background-color: rgba(255, 255, 255, 0.010);}
+#mainfour table tr:nth-child(2) td:nth-child(1) a{color: rgb(160, 160, 160); transition: all 0.24s;}
+#mainfour table tr:nth-child(2) td:nth-child(1):hover a{color: white;}
+#mainfour table tr:nth-child(2) td{width: 400px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(160, 160, 160);}
+#mainfour table tr:nth-child(2) td:nth-child(1){width: 400px; user-select: none; display: flex; justify-content: flex-start; padding-left: 178px;}
+
+#mainfour table tr:nth-child(2) td:nth-child(1) i{width: 20px; height: 20px; background: url(../image/exchange/pancakeswap.png) no-repeat; margin-right: 10px; background-size: cover;}
+
+#mainfour table tr:nth-child(3){width: 100%; height: 40px; display: flex; justify-content: center; align-items: center; flex-direction: row; background-color: rgba(0, 0, 0, 0.2);}
+#mainfour table tr:nth-child(3) td:nth-child(1) a{color: rgb(160, 160, 160); transition: all 0.24s;}
+#mainfour table tr:nth-child(3) td:nth-child(1):hover a{color: white;}
+#mainfour table tr:nth-child(3) td{width: 400px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(160, 160, 160);}
+#mainfour table tr:nth-child(3) td:nth-child(1){width: 400px; user-select: none; display: flex; justify-content: flex-start; padding-left: 178px;}
+#mainfour table tr:nth-child(3) td:nth-child(1) i{width: 20px; height: 20px; background: url(../image/exchange/p2pb2b.png) no-repeat; margin-right: 10px; background-size: cover;}
+
+#mainfour table tr:nth-child(4){width: 100%; height: 40px; display: flex; justify-content: center; align-items: center; flex-direction: row; background-color: rgba(255, 255, 255, 0.010);}
+#mainfour table tr:nth-child(4) td:nth-child(1) a{color: rgb(160, 160, 160); transition: all 0.24s;}
+#mainfour table tr:nth-child(4) td:nth-child(1):hover a{color: white;}
+#mainfour table tr:nth-child(4) td{width: 400px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(160, 160, 160);}
+#mainfour table tr:nth-child(4) td:nth-child(1){width: 400px; user-select: none; display: flex; justify-content: flex-start; padding-left: 178px;}
+#mainfour table tr:nth-child(4) td:nth-child(1) i{width: 20px; height: 20px; background: url(../image/exchange/tokpie.png) no-repeat; margin-right: 10px; background-size: cover;}
+
+#mainfour table tr:nth-child(5){width: 100%; height: 40px; display: flex; justify-content: center; align-items: center; flex-direction: row; background-color: rgba(0, 0, 0, 0.2);}
+#mainfour table tr:nth-child(5) td:nth-child(1) a{color: rgb(160, 160, 160); transition: all 0.24s;}
+#mainfour table tr:nth-child(5) td:nth-child(1):hover a{color: white;}
+#mainfour table tr:nth-child(5) td{width: 400px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(160, 160, 160);}
+#mainfour table tr:nth-child(5) td:nth-child(1){width: 400px; user-select: none; display: flex; justify-content: flex-start; padding-left: 178px;}
+#mainfour table tr:nth-child(5) td:nth-child(1) i{width: 20px; height: 20px; background: url(../image/exchange/nomics.png) no-repeat; margin-right: 10px; background-size: cover;}
+
+/*MAINFOUR*/
+
+
+
+
+/*MAINFIVE*/
+
+#fivemain{width: auto; height: auto;}
+#fivemain #one{width: 100%; min-height: 800px; display: flex; justify-content: center; align-items: center; padding: 88px 0 40px 0; background: linear-gradient(rgb(10, 20, 40), rgb(24, 24, 24));}
+#fivemain #one section{width: 1200px; min-height: 540px; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 60px 0 60px 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+#fivemain #one section div{width: 140px; height: 140px; background: url(../image/png/logo.png) no-repeat; background-size: cover;}
+#fivemain #one section h1{width: 90%; margin: 20px 0 10px 0; font-size: 40px; text-align: center; text-transform: uppercase; letter-spacing: 4px; color: white;}
+#fivemain #one section h4{width: 90%; font-size: 12px; text-align: center; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(220, 220, 220);}
+#fivemain #one section div{width: 140px; height: 140px; background: url(../image/png/logo.png) no-repeat; background-size: cover;}
+#fivemain #one section span{width: auto; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: row; flex-wrap: wrap; padding: 20px;}
+#fivemain #one section span a:nth-child(1) p{width: 160px; height: 50px; user-select: none; display: flex; justify-content: center; align-items: center; margin: 10px 10px; border: 1px solid rgba(255, 255, 255, 0.1); font-size: 10px; letter-spacing: 1px; border-radius: 6px; color: rgb(160, 160, 160); box-shadow: 0 0 20px black; text-transform: uppercase; background-color: rgba(0, 0, 0, 0.2); transition: all 0.24s;}
+#fivemain #one section span a:nth-child(1) p:hover{cursor: pointer; transform: scale(0.88); border: 1px solid rgba(255, 192, 203, 0.1); color: pink;}
+#fivemain #one section span a:nth-child(2) p{width: 160px; height: 50px; user-select: none; display: flex; justify-content: center; align-items: center; margin: 10px 10px; border: 1px solid rgba(255, 255, 255, 0.1); font-size: 10px; letter-spacing: 1px; border-radius: 6px; color: rgb(160, 160, 160); box-shadow: 0 0 20px black; text-transform: uppercase; background-color: rgba(0, 0, 0, 0.2); transition: all 0.24s;}
+#fivemain #one section span a:nth-child(2) p:hover{cursor: pointer; transform: scale(0.88); border: 1px solid rgba(50, 220, 129, 0.1); color: rgb(50, 220, 130);}
+
+#fivemain #two{width: 100%; height: auto; display: flex; justify-content: center; align-items: center; padding: 60px 0 60px 0; background-color: white;}
+#fivemain #two #twocon{width: 1200px; min-height: 540px; display: flex; justify-content: center; align-items: center; flex-direction: row; flex-wrap: wrap; padding: 60px 0 60px 0; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 0 20px black; border-radius: 30px; backdrop-filter: blur(100px); background: linear-gradient(rgba(255, 0, 0, 0.8), rgba(255, 20, 145, 0.8));}
+
+
+#fivemain #two #twocon section:nth-child(1){width: 50%; min-height: 540px; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 60px 0;}
+#fivemain #two #twocon section:nth-child(1) h1{width: 90%; user-select: none; font-size: 40px; text-align: center; text-transform: uppercase; letter-spacing: 4px; color: white;}
+#fivemain #two #twocon section:nth-child(1) h4{width: 90%; margin: 10px 0; font-size: 12px; text-align: center; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(220, 220, 220);}
+#fivemain #two #twocon section:nth-child(1) span{width: 80%; margin-top: 8px; font-size: 14px; text-align: center; letter-spacing: 0.4px; color: white;}
+#fivemain #two #twocon section:nth-child(1) #bsccopy{width: 160px; height: 50px; user-select: none; display: flex; justify-content: center; align-items: center; margin-top: 30px; border: 1px solid rgba(255, 255, 255, 0.1); font-size: 10px; letter-spacing: 1px; border-radius: 6px; color: rgb(160, 160, 160); box-shadow: 0 0 4px rgb(82, 82, 82); text-transform: uppercase; color: white; background-color: rgba(0, 0, 0, 0.2); transition: all 0.24s;}
+#fivemain #two #twocon section:nth-child(1) #bscc{width: 90%; height: auto; display: flex; justify-content: center; align-items: center; margin-top: 30px; padding: 10px 0; text-align: center; border: 1px solid rgba(255, 255, 255, 0.1); font-size: 10px; letter-spacing: 1px; border-radius: 6px; color: rgb(160, 160, 160); box-shadow: 0 0 4px rgb(82, 82, 82); text-transform: uppercase; color: white; background-color: rgba(0, 0, 0, 0.2); transition: all 0.24s;}
+#fivemain #two #twocon section:nth-child(1) #bsccopy:hover{cursor: pointer; color: white; transform: scale(0.88);}
+
+#fivemain #two #twocon section:nth-child(2){width: 50%; height: 540px; display: flex; justify-content: center; align-items: center;}
+#fivemain #two #twocon section:nth-child(2) div{width: 325px; height: 464px; background: url(../image/png/one.png) no-repeat; background-size: cover;}
+
+#fivemain #three{width: 100%; height: auto; display: flex; justify-content: center; align-items: center; padding: 60px 0 60px 0; background-color: white;}
+#fivemain #three #twocon{width: 1200px; min-height: 540px; display: flex; justify-content: center; align-items: center; flex-direction: row; flex-wrap: wrap; padding: 60px 0 60px 0; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 0 20px black; border-radius: 30px; backdrop-filter: blur(100px); background: linear-gradient(rgba(255, 0, 0, 0.8), rgba(255, 20, 145, 0.8));}
+#fivemain #three #twocon section:nth-child(1){width: 50%; min-height: 540px; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 60px 0;}
+#fivemain #three #twocon section:nth-child(1) h1{width: 90%; user-select: none; font-size: 40px; text-align: center; text-transform: uppercase; letter-spacing: 4px; color: white;}
+#fivemain #three #twocon section:nth-child(1) h4{width: 90%; margin: 10px 0; font-size: 12px; text-align: center; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(220, 220, 220);}
+#fivemain #three #twocon section:nth-child(1) span{width: 80%; margin-top: 8px; font-size: 14px; text-align: center; letter-spacing: 0.4px; color: white;}
+#fivemain #three #twocon section:nth-child(1) div{width: 160px; height: 50px; user-select: none; display: flex; justify-content: center; align-items: center; margin-top: 30px; border: 1px solid rgba(255, 255, 255, 0.1); font-size: 10px; letter-spacing: 1px; border-radius: 6px; color: rgb(160, 160, 160); box-shadow: 0 0 4px rgb(82, 82, 82); text-transform: uppercase; color: white; background-color: rgba(0, 0, 0, 0.2); transition: all 0.24s;}
+#fivemain #three #twocon section:nth-child(1) div:hover{cursor: pointer; color: white; transform: scale(0.88);}
+
+#fivemain #three #twocon section:nth-child(2){width: 50%; height: 540px; display: flex; justify-content: center; align-items: center;}
+#fivemain #three #twocon section:nth-child(2) div{width: 325px; height: 483px; background: url(../image/png/two.png) no-repeat; background-size: cover;}
+
+#fivemain #four{width: 100%; height: auto; display: flex; justify-content: center; align-items: center; padding: 60px 0 60px 0; background-color: white;}
+#fivemain #four #twocon{width: 1200px; min-height: 540px; display: flex; justify-content: center; align-items: center; flex-direction: row; padding: 60px 0 60px 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: linear-gradient(rgba(255, 0, 0, 0.8), rgba(255, 20, 145, 0.8));}
+#fivemain #four #twocon section:nth-child(1){width: 50%; min-height: 540px; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 60px 0;}
+#fivemain #four #twocon section:nth-child(1) h1{width: 90%; user-select: none; font-size: 40px; text-align: center; text-transform: uppercase; letter-spacing: 4px; color: white;}
+#fivemain #four #twocon section:nth-child(1) h4{width: 90%; margin: 10px 0; font-size: 12px; text-align: center; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(220, 220, 220);}
+#fivemain #four #twocon section:nth-child(1) span{width: 80%; margin-top: 8px; font-size: 14px; text-align: center; letter-spacing: 0.4px; color: white;}
+#fivemain #four #twocon section:nth-child(1) div{width: 160px; height: 50px; user-select: none; display: flex; justify-content: center; align-items: center; margin-top: 30px; border: 1px solid rgba(255, 255, 255, 0.1); font-size: 10px; letter-spacing: 1px; border-radius: 6px; color: rgb(160, 160, 160); box-shadow: 0 0 4px rgb(82, 82, 82); text-transform: uppercase; color: white; background-color: rgba(0, 0, 0, 0.2); transition: all 0.24s;}
+#fivemain #four #twocon section:nth-child(1) div:hover{cursor: pointer; color: white; transform: scale(0.88);}
+
+#fivemain #four #twocon section:nth-child(2){width: 50%; height: 540px; display: flex; justify-content: center; align-items: center;}
+#fivemain #four #twocon section:nth-child(2) div{width: 325px; height: 473px; background: url(../image/png/three.png) no-repeat; background-size: cover;}
+
+#fivemain #five{width: 100%; height: auto; display: flex; justify-content: center; align-items: center; padding: 60px 0 60px 0; background-color: white;}
+#fivemain #five #twocon{width: 1200px; min-height: 540px; display: flex; justify-content: center; align-items: center; flex-direction: column;border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: linear-gradient(rgba(255, 0, 0, 0.8), rgba(255, 20, 145, 0.8));}
+#fivemain #five #twocon section:nth-child(1){width: 100%; min-height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 60px 0 20px 0;}
+#fivemain #five #twocon section:nth-child(1) h1{width: 90%; user-select: none; font-size: 40px; text-align: center; text-transform: uppercase; letter-spacing: 4px; color: white;}
+#fivemain #five #twocon section:nth-child(1) h4{width: 80%; margin: 10px 0; font-size: 12px; text-align: center; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(220, 220, 220);}
+#fivemain #five #twocon section:nth-child(1) span{width: 80%; margin-top: 8px; font-size: 14px; text-align: center; letter-spacing: 0.4px; color: white;}
+#fivemain #five #twocon section:nth-child(1) div{width: 160px; height: 50px; user-select: none; display: flex; justify-content: center; align-items: center; margin-top: 30px; border: 1px solid rgba(255, 255, 255, 0.1); font-size: 10px; letter-spacing: 1px; border-radius: 6px; color: rgb(160, 160, 160); box-shadow: 0 0 4px rgb(82, 82, 82); text-transform: uppercase; color: white; background-color: rgba(0, 0, 0, 0.2); transition: all 0.24s;}
+#fivemain #five #twocon section:nth-child(1) div:hover{cursor: pointer; color: white; transform: scale(0.88);}
+
+#fivemain #five #twocon section:nth-child(2){width: 100%; height: auto; display: flex; justify-content: center; align-items: center; padding: 20px;}
+#fivemain #five #twocon section:nth-child(2) video{width: 90%; height: auto; border-radius: 8px;}
+
+/*MAINFIVE*/
+
+/*MAINSIX*/
+#sixmain{width: 100%; height: auto;}
+#sixmain #one{width: 100%; height: 100vh; padding: 88px 0 40px 0;}
+#sixmain #one section:nth-child(1){width: 100%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; margin-top: 60px; padding: 20px 0;}
+#sixmain #one section:nth-child(1) h1{width: 90%; user-select: none; font-size: 40px; text-align: center; text-transform: uppercase; letter-spacing: 4px; color: crimson;}
+#sixmain #one section:nth-child(1) h2{width: 80%; margin: 10px 0; font-size: 12px; text-align: center; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(120, 120, 120);}
+
+
+#sixmain #two{max-width: 1300px; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: row; flex-wrap: wrap; margin: 0 auto 0 auto; padding: 60px 0; background-color: gray;}
+#sixmain #two div{width: 340px; height: 400px; display: flex; justify-content: center; align-items: center; flex-direction: row; margin: 20px; border-radius: 30px; background-color: rgb(160, 10, 97);}
+
+/*MAINSIX*/
+
+#nft{width: auto; height: auto;}
+#nft #one{width: 100%; height: 680px; display: flex; justify-content: center; align-items: center; flex-direction: column; background: linear-gradient(45deg, #009FFF, #ec2F4B);}
+#nft #one img{width: 300px; user-select: none; animation-name: animation; animation-duration: 4s; animation-iteration-count: infinite;}
+#nft #ht{width: 100%; height: auto; display: flex; justify-content: center; align-items: center; padding: 100px 0 30px 0;}
+#nft #ht h1{font-size: 40px; text-transform: uppercase; letter-spacing: 10px; background: -webkit-linear-gradient(90deg, #12c2e9, #c471ed, #f64f59); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+
+#nft #three{width: 100%; min-height: 500px; display: flex; justify-content: center; align-items: center; flex-direction: row; flex-wrap: wrap; padding: 40px 0; background-color: white;}
+#nft #three img{width: 300px; user-select: none; margin: 20px; transition: all 0.24s;}
+#nft #three img:hover{cursor: pointer; transform: scale(0.98);}
+
+#nft #one h2{width: 90%; margin: 20px 0 10px 0; font-size: 34px; text-align: center; text-transform: uppercase; font-weight: normal; letter-spacing: 4px; color: white;}
+#nft #one span{max-width: 1000px; font-size: 14px; text-align: center; color: rgb(220, 220, 220);}
+#nft #one span a{font-size: 14px; color: rgb(165, 165, 165); border-radius: 10px; transition: all 0.24s;}
+#nft #one span a:hover{font-size: 14px; color: rgb(255, 255, 255); border-radius: 10px;}
+
+
+@keyframes animation
+{
+    20%{transform: scale(0.9); filter: grayscale(100%);}
+    40%{transform: scale(1);}
+    60%{transform: scale(1); filter: grayscale(20%);}
+    80%{transform: scale(0.9); filter: grayscale(100%);}
+}
+
+
+@media all and (max-width: 1260px)
+{
+
+#onemain #pj0 #pj0blur div:nth-child(1) span{max-width: 90%; font-size: 14px; text-align: center; color: rgb(220, 220, 220);}
+
+
+#onemain #pj1 #pj1blur div:nth-child(1) span{max-width: 90%; font-size: 14px; text-align: center; color: rgb(220, 220, 220);}
+
+    #onemain #one #oneblur{width: 90%; min-height: 540px; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 88px 0 48px 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+    #onemain #three{width: 100%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 0 auto 0 auto; padding: 20px 0 0 0;}
+    #onemain #three section:nth-child(1){width: 90%; height: auto; padding: 20px; display: flex; justify-content: center; align-items: center; flex-direction: column;}
+    #onemain #three section:nth-child(1) h6{font-size: 16px; text-align: center; color: rgb(160, 160, 160);}
+    #onemain #three section:nth-child(1) h2{margin: 16px 0; font-size: 36px; text-align: center; text-transform: uppercase; color: rgb(34, 34, 34);}
+    #onemain #three section:nth-child(1) h4{width: 90%; font-size: 14px; text-align: center; color: rgb(140, 140, 140);}
+
+    #onemain #three section:nth-child(2){width: 500px; height: 400px; display: flex; justify-content: center; align-items: center;}
+    #onemain #three section:nth-child(2) div{width: 380px; height: 380px; background: url(../image/png/chart.png) no-repeat; background-size: cover;}
+
+    #onemain #hampstake section{width: 90%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 40px 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+
+    #onemain #five section:nth-child(1){width: 90%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 140px 0 60px 0;}
+    #onemain #five section:nth-child(2){width: 90%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: row; flex-wrap: wrap;}
+
+    #onemain #seven section{width: 90%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 80px 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+    #onemain #seven section h1{font-size: 24px; letter-spacing: 2px; text-transform: uppercase; color: white;}
+    #onemain #seven section span{width: 80%; margin: 30px 0 0 0; font-size: 18px; text-align: center; color: rgb(160, 160, 160);}
+    #onemain #seven section div{width: 160px; height: 50px; user-select: none; display: flex; justify-content: center; align-items: center; margin-top: 30px; border: 1px solid rgba(255, 255, 255, 0.1); font-size: 12px; letter-spacing: 1px; border-radius: 6px; color: rgb(160, 160, 160); box-shadow: 0 0 20px black; text-transform: uppercase; background-color: rgba(0, 0, 0, 0.2);}
+    
+    #onemain #one #audit section{width: 90%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 80px 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+
+    #onemain #mail #mc_embed_signup{width: 90%; min-height: 400px; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 60px 0 60px 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+
+    /*MAINTWO*/
+    #twomain #two{padding: 60px 0;}
+    #twomain #two section{width: 90%; min-height: 500px; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 60px 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); backdrop-filter: blur(100px); background: linear-gradient(rgba(255, 0, 0, 0.8), rgba(255, 20, 145, 0.8));}
+    #twomain #three section{width: 100%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: row; flex-wrap: wrap;}
+    #twomain #three section section:nth-child(1){max-width: 90%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 30px; padding: 60px 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+    #twomain #three section section:nth-child(2){max-width: 90%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 30px; padding: 60px 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+    #twomain #three section section:nth-child(3){max-width: 90%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 30px; padding: 60px 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+    #twomain #three section section:nth-child(4){max-width: 90%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 30px; padding: 60px 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+    #twomain #three section section:nth-child(5){max-width: 90%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 30px; padding: 60px 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+    #twomain #three section section:nth-child(6){max-width: 90%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 30px; padding: 60px 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+    #twomain #four section{width: 90%; min-height: 540px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 0 0 60px 0; padding: 60px 0 60px 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+    #twomain #four section p{width: 400px; height: 267px; margin: 30px; border-radius: 4px; background: url(../image/jpg/game.jpg) no-repeat; background-size: cover;}
+    #twomain #disc #disccon section:nth-child(1){width: 90%; height: 360px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 20px; padding: 20px 0; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 30px; background-color: rgba(0, 0, 0, 0.02); transition: all 0.24s;}
+    #twomain #disc #disccon section:nth-child(2){width: 90%; height: 360px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 20px; padding: 20px 0; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 30px; background-color: rgba(0, 0, 0, 0.02); transition: all 0.24s;}
+    #twomain #disc #disccon section:nth-child(3){width: 90%; height: 360px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 20px; padding: 20px 0; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 30px; background-color: rgba(0, 0, 0, 0.02); transition: all 0.24s;}
+    /*MAINTWO*/
+
+    /*MAINTHREE*/
+    #threemain section{width: 90%; min-height: 540px; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 88px 0 48px 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+    #twomain #one section #hm{width: 433px; height: 80px; background: url(../image/png/PlaytoEarnLogo.png) no-repeat; background-size: cover;}
+    /*MAINTHREE*/
+
+    /*MAINFOUR*/
+    #mainfour section:nth-child(1){width: 90%; min-height: 300px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin-bottom: 40px; padding: 30px 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+    #mainfour section:nth-child(2){width: 90%; min-height: 540px; display: flex; justify-content: flex-start; align-items: center; flex-direction: column; flex-wrap: wrap; padding-top: 30px; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+
+    #mainfour table tr:nth-child(1) td{width: 200px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(200, 200, 200);}
+    
+    #mainfour table tr:nth-child(2) td{width: 200px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(160, 160, 160);}
+    #mainfour table tr:nth-child(2) td:nth-child(1){width: 206px; user-select: none; display: flex; justify-content: flex-start; padding-left: 80px;}
+    
+    #mainfour table tr:nth-child(3) td{width: 200px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(160, 160, 160);}
+    #mainfour table tr:nth-child(3) td:nth-child(1){width: 206px; user-select: none; display: flex; justify-content: flex-start; padding-left: 80px;}
+    #mainfour table tr:nth-child(4) td{width: 200px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(160, 160, 160);}
+    #mainfour table tr:nth-child(4) td:nth-child(1){width: 206px; user-select: none; display: flex; justify-content: flex-start; padding-left: 80px;}
+    
+    #mainfour table tr:nth-child(5) td{width: 200px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(160, 160, 160);}
+    #mainfour table tr:nth-child(5) td:nth-child(1){width: 206px; user-select: none; display: flex; justify-content: flex-start; padding-left: 80px;}
+
+    /*MAINFOUR*/
+
+
+    /*MAINFOUR*/
+    #fivemain #one section{width: 90%; min-height: 540px; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 88px 0 48px 0; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+    /*MAINFOUR*/
+
+
+
+    /*MAINFIVE*/
+    #fivemain #two #twocon{width: 90%; min-height: 540px; display: flex; justify-content: center; align-items: center; flex-direction: row; flex-wrap: wrap; padding: 60px 0 60px 0; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 0 20px black; border-radius: 30px; backdrop-filter: blur(100px); background: linear-gradient(rgba(255, 0, 0, 0.8), rgba(255, 20, 145, 0.8));}
+    #fivemain #three #twocon{width: 90%; min-height: 540px; display: flex; justify-content: center; align-items: center; flex-direction: row; flex-wrap: wrap; padding: 60px 0 60px 0; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 0 20px black; border-radius: 30px; backdrop-filter: blur(100px); background: linear-gradient(rgba(255, 0, 0, 0.8), rgba(255, 20, 145, 0.8));}
+    #fivemain #four #twocon{width: 90%; min-height: 540px; display: flex; justify-content: center; align-items: center; flex-direction: row; flex-wrap: wrap; padding: 60px 0 60px 0; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 0 20px black; border-radius: 30px; backdrop-filter: blur(100px); background: linear-gradient(rgba(255, 0, 0, 0.8), rgba(255, 20, 145, 0.8));}
+    #fivemain #five #twocon{width: 90%; min-height: 540px; display: flex; justify-content: center; align-items: center; flex-direction: row; flex-wrap: wrap; padding: 60px 0 60px 0; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 0 20px black; border-radius: 30px; backdrop-filter: blur(100px); background: linear-gradient(rgba(255, 0, 0, 0.8), rgba(255, 20, 145, 0.8));}
+    /*MAINFIVE*/
+    #nft #one h2{width: 90%; margin: 20px 0 10px 0; font-size: 26px; text-align: center; text-transform: uppercase; font-weight: normal; letter-spacing: 4px; color: white;}
+    #nft #one span{max-width: 80%; font-size: 14px; text-align: center; color: rgb(220, 220, 220);}
+
+}
+
+/*WL FC âˆž NC US*/
+
+@media all and (max-width: 800px)
+{
+    #group #one span{width: 80%;}
+
+    #group #two{min-width: 600px; width: 30%; height: auto; display: flex; justify-content: center; align-items: flex-start; flex-direction: column; margin: 20px; padding: 40px; border-radius: 30px; background: linear-gradient(45deg, #2193b0, #6dd5ed);}
+    #group #two h1{color: white; font-size: 22px; font-weight: normal; letter-spacing: 2px;}
+    #group #two span{margin: 20px 0; font-size: 14px; color: rgb(240, 240, 240);}
+    #group #two button{width: 160px; height: 52px; color: rgb(200, 200, 200); border: 1px solid rgb(0, 0, 0); font-size: 11px; text-transform: uppercase; letter-spacing: 2px; border-radius: 8px; backdrop-filter: blur(20px); background-color: black; transition: all 0.24s;}
+    #group #two button:hover{width: 160px; height: 52px; cursor: pointer; color: white; border-radius: 8px; box-shadow: 0 0 60px black;}
+
+    #group #three{min-width: 600px; width: 30%; height: auto; display: flex; justify-content: center; align-items: flex-start; flex-direction: column; margin: 20px; padding: 40px; border-radius: 30px; background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);}
+    #group #three h1{color: white; font-size: 22px; font-weight: normal; letter-spacing: 2px;}
+    #group #three h1 img{width: 28px; height: 28px; margin-bottom: -5px;}
+    #group #three span{margin: 20px 0; font-size: 14px; color: rgb(240, 240, 240);}
+    #group #three button{width: 160px; height: 52px; color: rgb(200, 200, 200); border: 1px solid rgb(0, 0, 0); font-size: 11px; text-transform: uppercase; letter-spacing: 2px; border-radius: 8px; backdrop-filter: blur(20px); background-color: black; transition: all 0.24s;}
+    #group #three button:hover{width: 160px; height: 52px; cursor: pointer; color: white; border-radius: 8px; box-shadow: 0 0 60px black;}
+
+    #group #four{min-width: 600px; width: 30%; height: auto; display: flex; justify-content: center; align-items: flex-start; flex-direction: column; margin: 20px; padding: 40px; border-radius: 30px; background: linear-gradient(45deg, red, deeppink);}
+    #group #four h1{color: white; font-size: 22px; font-weight: normal; letter-spacing: 2px;}
+    #group #four h1 img{width: 28px; height: 28px; margin-bottom: -5px;}
+    #group #four span{margin: 20px 0; font-size: 14px; color: rgb(240, 240, 240);}
+    #group #four button{width: 160px; height: 52px; color: rgb(200, 200, 200); border: 1px solid rgb(0, 0, 0); font-size: 11px; text-transform: uppercase; letter-spacing: 2px; border-radius: 8px; backdrop-filter: blur(20px); background-color: black; transition: all 0.24s;}
+    #group #four button:hover{width: 160px; height: 52px; cursor: pointer; color: white; border-radius: 8px; box-shadow: 0 0 60px black;}
+
+    #group #five{min-width: 600px; width: 30%; height: auto; display: flex; justify-content: center; align-items: flex-start; flex-direction: column; margin: 20px; padding: 40px; border-radius: 30px; background: linear-gradient(45deg, #2193b0, #6dd5ed);}
+    #group #five h1{color: white; font-size: 22px; font-weight: normal; letter-spacing: 2px;}
+    #group #five h1 img{width: 28px; height: 28px; margin-bottom: -5px;}
+    #group #five span{margin: 20px 0; font-size: 14px; color: rgb(240, 240, 240);}
+    #group #five button{width: 160px; height: 52px; color: rgb(200, 200, 200); border: 1px solid rgb(0, 0, 0); font-size: 11px; text-transform: uppercase; letter-spacing: 2px; border-radius: 8px; backdrop-filter: blur(20px); background-color: black; transition: all 0.24s;}
+    #group #five button:hover{width: 160px; height: 52px; cursor: pointer; color: white; border-radius: 8px; box-shadow: 0 0 60px black;}
+
+    #group #six{min-width: 600px; width: 30%; height: auto; display: flex; justify-content: center; align-items: flex-start; flex-direction: column; margin: 20px; padding: 40px; border-radius: 30px; background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);}
+    #group #six h1{color: white; font-size: 22px; font-weight: normal; letter-spacing: 2px;}
+    #group #six h1 img{width: 28px; height: 28px; margin-bottom: -5px;}
+    #group #six span{margin: 20px 0; font-size: 14px; color: rgb(240, 240, 240);}
+    #group #six button{width: 160px; height: 52px; color: rgb(200, 200, 200); border: 1px solid rgb(0, 0, 0); font-size: 11px; text-transform: uppercase; letter-spacing: 2px; border-radius: 8px; backdrop-filter: blur(20px); background-color: black; transition: all 0.24s;}
+    #group #six button:hover{width: 160px; height: 52px; cursor: pointer; color: white; border-radius: 8px; box-shadow: 0 0 60px black;}
+
+    #group #seven{min-width: 600px; width: 30%; height: auto; display: flex; justify-content: center; align-items: flex-start; flex-direction: column; margin: 20px; padding: 40px; border-radius: 30px; background: linear-gradient(45deg, red, deeppink);}
+    #group #seven h1{color: white; font-size: 22px; font-weight: normal; letter-spacing: 2px;}
+    #group #seven h1 img{width: 28px; height: 28px; margin-bottom: -5px;}
+    #group #seven span{margin: 20px 0; font-size: 14px; color: rgb(240, 240, 240);}
+    #group #seven button{width: 160px; height: 52px; color: rgb(200, 200, 200); border: 1px solid rgb(0, 0, 0); font-size: 11px; text-transform: uppercase; letter-spacing: 2px; border-radius: 8px; backdrop-filter: blur(20px); background-color: black; transition: all 0.24s;}
+    #group #seven button:hover{width: 160px; height: 52px; cursor: pointer; color: white; border-radius: 8px; box-shadow: 0 0 60px black;}
+
+    #group #social{width: calc(90% - 20px); height: 120px; display: flex; justify-content: center; align-items: center; flex-direction: row; margin-top: 20px; border-radius: 20px; background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);}
+    #group #social i{margin: 0 8px; font-size: 18px; color: rgb(220, 220, 220); transition: all 0.24s;}
+    #group #social i:hover{cursor: pointer; font-size: 18px; color: rgb(255, 255, 255);}
+}
+
+@media all and (max-width: 768px)
+{
+    header ul{display: none;}
+    header #openmenu{width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; flex-direction: column; margin-right: 16px;}
+    header #openmenu:hover{cursor: pointer;}
+    header #openmenu #openone{width: 24px; height: 1px; position: absolute; margin-bottom: 12px; border-radius: 1px; background-color: rgb(220, 220, 220); transition: all 0.24s;}
+    header #openmenu #opentwo{width: 24px; height: 1px; position: absolute; border-radius: 1px; background-color: rgb(220, 220, 220); transition: all 0.24s;}
+    header #openmenu #openthree{width: 24px; height: 1px; position: absolute; margin-top: 12px; border-radius: 1px; background-color: rgb(220, 220, 220); transition: all 0.24s;}
+    header #openmenu:hover #openone{background-color: white;}
+    header #openmenu:hover #opentwo{background-color: white;}
+    header #openmenu:hover #openthree{background-color: white;}
+
+    #onemain #three section:nth-child(2){width: 480px; height: 370px; display: flex; justify-content: center; align-items: center;}
+    #onemain #three section:nth-child(2) div{width: 370px; height: 370px; background: url(../image/png/chart.png) no-repeat; background-size: cover;}
+    /*MAINTHREE*/
+    #twomain #one section #hm{width: 260px; height: 48px; background: url(../image/png/PlaytoEarnLogo.png) no-repeat; background-size: cover;}
+    /*MAINTHREE*/
+
+        /*MAINFOUR*/
+        #mainfour table tr:nth-child(1) td{width: 140px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(200, 200, 200);}
+        #mainfour table tr:nth-child(2) td{width: 140px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(160, 160, 160);}
+        #mainfour table tr:nth-child(2) td:nth-child(1){width: 150px; user-select: none; display: flex; justify-content: flex-start; padding-left: 10px;}
+
+        #mainfour table tr:nth-child(3) td{width: 140px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(160, 160, 160);}
+        #mainfour table tr:nth-child(3) td:nth-child(1){width: 150px; user-select: none; display: flex; justify-content: flex-start; padding-left: 10px;}
+
+        #mainfour table tr:nth-child(4) td{width: 140px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(160, 160, 160);}
+        #mainfour table tr:nth-child(4) td:nth-child(1){width: 150px; user-select: none; display: flex; justify-content: flex-start; padding-left: 10px;}
+
+        #mainfour table tr:nth-child(5) td{width: 140px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(160, 160, 160);}
+        #mainfour table tr:nth-child(5) td:nth-child(1){width: 150px; user-select: none; display: flex; justify-content: flex-start; padding-left: 10px;}
+
+        /*MAINFOUR*/
+
+    #onemain #hampstake #hm{width: 260px; height: 48px; background: url(../image/png/PlaytoEarnLogo.png) no-repeat; background-size: cover;}
+    #onemain #hampstake img{width: 90%; height: auto; margin: 40px 0 0 0; border-radius: 4px;}
+        
+    /*MAINFIVE*/
+    #fivemain #two #twocon{width: 90%; min-height: 540px; display: flex; justify-content: center; align-items: center; flex-direction: column; flex-wrap: wrap; padding: 60px 0 60px 0; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 0 20px black; border-radius: 30px; backdrop-filter: blur(100px); background: linear-gradient(rgba(255, 0, 0, 0.8), rgba(255, 20, 145, 0.8));}
+    #fivemain #two #twocon section:nth-child(1){width: 100%; min-height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 60px 0;}
+    #fivemain #two #twocon section:nth-child(2){width: 100%; height: auto; display: flex; justify-content: center; align-items: center; padding: 20px 0;}
+    #fivemain #two #twocon section:nth-child(2) div{width: 303px; height: 433px; background: url(../image/png/one.png) no-repeat; background-size: cover;}
+
+    #fivemain #three #twocon{width: 90%; min-height: 540px; display: flex; justify-content: center; align-items: center; flex-direction: column; flex-wrap: wrap; padding: 60px 0 60px 0; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 0 20px black; border-radius: 30px; backdrop-filter: blur(100px); background: linear-gradient(rgba(255, 0, 0, 0.8), rgba(255, 20, 145, 0.8));}
+    #fivemain #three #twocon section:nth-child(1){width: 100%; min-height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 60px 0;}
+    #fivemain #three #twocon section:nth-child(2){width: 100%; height: auto; display: flex; justify-content: center; align-items: center; padding: 20px 0;}
+    #fivemain #three #twocon section:nth-child(2) div{width: 325px; height: 483px; background: url(../image/png/two.png) no-repeat; background-size: cover;}
+
+    #fivemain #four #twocon{width: 90%; min-height: 540px; display: flex; justify-content: center; align-items: center; flex-direction: column; flex-wrap: wrap; padding: 60px 0 60px 0; border: 1px solid rgba(0, 0, 0, 0.2); box-shadow: 0 0 20px black; border-radius: 30px; backdrop-filter: blur(100px); background: linear-gradient(rgba(255, 0, 0, 0.8), rgba(255, 20, 145, 0.8));}
+    #fivemain #four #twocon section:nth-child(1){width: 100%; min-height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 60px 0;}
+    #fivemain #four #twocon section:nth-child(2){width: 100%; height: auto; display: flex; justify-content: center; align-items: center; padding: 20px 0;}
+    #fivemain #four #twocon section:nth-child(2) div{width: 325px; height: 473px; background: url(../image/png/three.png) no-repeat; background-size: cover;}
+
+    #fivemain #five #twocon section:nth-child(2) iframe{width: 340px; height: 174px; background: url(../image/png/three.png) no-repeat; background-size: cover;}
+    /*MAINFIVE*/
+
+    #nft #one img{width: 240px; user-select: none; animation-name: animation; animation-duration: 4s; animation-iteration-count: infinite;}
+    #nft #three img{width: 280px; user-select: none; margin: 20px; transition: all 0.24s;}
+
+#onemain #lock img{width: 400px; border-radius: 10px;}
+
+}
+
+@media all and (max-width: 680px)
+{
+    #socma{width: 100%; height: 50px; z-index: 3; position: fixed; display: flex; justify-content: center; align-items: center; flex-direction: row; right: 0; bottom: 0; border: 1px solid rgba(124, 76, 76, 0.2); border-radius: 0; backdrop-filter: blur(20px); background-color: rgba(0, 0, 0, 0.1);}
+    #socma a{width: 30px; height: 30px; display: flex; justify-content: center; align-items: center; margin: 0 6px;}
+    #socma a i{font-size: 14px; color: rgb(160, 160, 160); transition: all 0.24s;}
+    #socma a:hover i{color: white;}
+
+    #group{width: 100%; min-height: 100vh; display: flex; justify-content: flex-start; align-items: center; flex-direction: column;}
+    #group #one{width: 100%; height: 500px; display: flex; justify-content: center; align-items: center; flex-direction: column; padding-top: 50px; border-bottom: 1px solid rgb(20, 20, 20); background: black;}
+    #group #one i{font-size: 60px; background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+    #group #one h1{margin: 20px 0; font-size: 40px; text-transform: uppercase; letter-spacing: 4px; background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59); -webkit-background-clip: text; -webkit-text-fill-color: transparent;}
+    #group #one span{max-width: 800px; font-size: 16px; text-align: center; color: rgb(200, 200, 200);}
+
+    #group #congl{width: 100%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: row; flex-wrap: wrap; padding: 20px 0 0 0; background: linear-gradient(rgb(5, 5, 10), rgb(0, 0, 0));}
+    #group #conlg{width: 1400px; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: row; flex-wrap: wrap; padding: 40px 0 40px 0;}
+
+    #group #two{min-width: 90%; width: 30%; height: auto; display: flex; justify-content: center; align-items: flex-start; flex-direction: column; margin: 20px; padding: 40px; border-radius: 30px; background: linear-gradient(45deg, #2193b0, #6dd5ed);}
+    #group #two h1{color: white; font-size: 18px; font-weight: normal; letter-spacing: 2px;}
+    #group #two span{margin: 20px 0; font-size: 12px; color: rgb(240, 240, 240);}
+    #group #two button{width: 120px; height: 44px; color: rgb(200, 200, 200); border: 1px solid rgb(0, 0, 0); font-size: 10px; text-transform: uppercase; letter-spacing: 2px; border-radius: 8px; backdrop-filter: blur(20px); background-color: black; transition: all 0.24s;}
+    #group #two button:hover{width: 120px; height: 44px; cursor: pointer; color: white; border-radius: 8px; box-shadow: 0 0 60px black;}
+
+    #group #three{min-width: 90%; width: 30%; height: auto; display: flex; justify-content: center; align-items: flex-start; flex-direction: column; margin: 20px; padding: 40px; border-radius: 30px; background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);}
+    #group #three h1{color: white; font-size: 18px; font-weight: normal; letter-spacing: 2px;}
+    #group #three h1 img{width: 22px; height: 22px; margin-bottom: -5px;}
+    #group #three span{margin: 20px 0; font-size: 12px; color: rgb(240, 240, 240);}
+    #group #three button{width: 120px; height: 44px; color: rgb(200, 200, 200); border: 1px solid rgb(0, 0, 0); font-size: 10px; text-transform: uppercase; letter-spacing: 2px; border-radius: 8px; backdrop-filter: blur(20px); background-color: black; transition: all 0.24s;}
+    #group #three button:hover{width: 120px; height: 44px; cursor: pointer; color: white; border-radius: 8px; box-shadow: 0 0 60px black;}
+
+    #group #four{min-width: 90%; width: 30%; height: auto; display: flex; justify-content: center; align-items: flex-start; flex-direction: column; margin: 20px; padding: 40px; border-radius: 30px; background: linear-gradient(45deg, red, deeppink);}
+    #group #four h1{color: white; font-size: 18px; font-weight: normal; letter-spacing: 2px;}
+    #group #four h1 img{width: 22px; height: 22px; margin-bottom: -5px;}
+    #group #four span{margin: 20px 0; font-size: 12px; color: rgb(240, 240, 240);}
+    #group #four button{width: 120px; height: 44px; color: rgb(200, 200, 200); border: 1px solid rgb(0, 0, 0); font-size: 10px; text-transform: uppercase; letter-spacing: 2px; border-radius: 8px; backdrop-filter: blur(20px); background-color: black; transition: all 0.24s;}
+    #group #four button:hover{width: 120px; height: 44px; cursor: pointer; color: white; border-radius: 8px; box-shadow: 0 0 60px black;}
+
+    #group #five{min-width: 90%; width: 30%; height: auto; display: flex; justify-content: center; align-items: flex-start; flex-direction: column; margin: 20px; padding: 40px; border-radius: 30px; background: linear-gradient(45deg, #2193b0, #6dd5ed);}
+    #group #five h1{color: white; font-size: 18px; font-weight: normal; letter-spacing: 2px;}
+    #group #five h1 img{width: 22px; height: 22px; margin-bottom: -5px;}
+    #group #five span{margin: 20px 0; font-size: 12px; color: rgb(240, 240, 240);}
+    #group #five button{width: 120px; height: 44px; color: rgb(200, 200, 200); border: 1px solid rgb(0, 0, 0); font-size: 10px; text-transform: uppercase; letter-spacing: 2px; border-radius: 8px; backdrop-filter: blur(20px); background-color: black; transition: all 0.24s;}
+    #group #five button:hover{width: 120px; height: 44px; cursor: pointer; color: white; border-radius: 8px; box-shadow: 0 0 60px black;}
+
+    #group #six{min-width: 90%; width: 30%; height: auto; display: flex; justify-content: center; align-items: flex-start; flex-direction: column; margin: 20px; padding: 40px; border-radius: 30px; background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);}
+    #group #six h1{color: white; font-size: 18px; font-weight: normal; letter-spacing: 2px;}
+    #group #six h1 img{width: 22px; height: 22px; margin-bottom: -5px;}
+    #group #six span{margin: 20px 0; font-size: 12px; color: rgb(240, 240, 240);}
+    #group #six button{width: 120px; height: 44px; color: rgb(200, 200, 200); border: 1px solid rgb(0, 0, 0); font-size: 10px; text-transform: uppercase; letter-spacing: 2px; border-radius: 8px; backdrop-filter: blur(20px); background-color: black; transition: all 0.24s;}
+    #group #six button:hover{width: 120px; height: 44px; cursor: pointer; color: white; border-radius: 8px; box-shadow: 0 0 60px black;}
+
+    #group #seven{min-width: 90%; width: 30%; height: auto; display: flex; justify-content: center; align-items: flex-start; flex-direction: column; margin: 20px; padding: 40px; border-radius: 30px; background: linear-gradient(45deg, red, deeppink);}
+    #group #seven h1{color: white; font-size: 18px; font-weight: normal; letter-spacing: 2px;}
+    #group #seven h1 img{width: 22px; height: 22px; margin-bottom: -5px;}
+    #group #seven span{margin: 20px 0; font-size: 12px; color: rgb(240, 240, 240);}
+    #group #seven button{width: 120px; height: 44px; color: rgb(200, 200, 200); border: 1px solid rgb(0, 0, 0); font-size: 10px; text-transform: uppercase; letter-spacing: 2px; border-radius: 8px; backdrop-filter: blur(20px); background-color: black; transition: all 0.24s;}
+    #group #seven button:hover{width: 120px; height: 44px; cursor: pointer; color: white; border-radius: 8px; box-shadow: 0 0 60px black;}
+
+    #group #social{width: calc(90% - 20px); height: 100px; display: flex; justify-content: center; align-items: center; flex-direction: row; margin-top: 20px; border-radius: 20px; background: linear-gradient(45deg, #12c2e9, #c471ed, #f64f59);}
+    #group #social a{width: 50px; height: 40px; display: flex; justify-content: center; align-items: center;}
+    #group #social i{margin: 0 8px; font-size: 16px; color: rgb(220, 220, 220); transition: all 0.24s;}
+    #group #social a:hover i{cursor: pointer; font-size: 16px; color: rgb(255, 255, 255);}
+
+}
+
+
+@media all and (max-width: 480px)
+{
+
+    #onemain #one #oneblur h1{width: 90%; user-select: none; margin: 30px 0; font-size: 30px; text-align: center; text-transform: uppercase; letter-spacing: 2px; color: white;}
+    #onemain #three section:nth-child(2){width: 360px; height: auto; display: flex; justify-content: center; align-items: center;}
+    #onemain #three section:nth-child(2) div{width: 280px; height: 280px; background: url(../image/png/chart.png) no-repeat; background-size: cover;}
+    #onemain #five section:nth-child(1) h1{margin: 10px 0; font-size: 40px; text-align: center; text-transform: uppercase; letter-spacing: 4px; color: white;}
+    #onemain #five section:nth-child(2) div:nth-child(4){width: 500px; height: 300px; display: flex; justify-content: center; align-items: center; flex-direction: column; border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 30px; box-shadow: 0 0 20px black; backdrop-filter: blur(100px); background: rgba(0, 0, 0, 0.2);}
+    #onemain #eight section div:nth-child(1){width: 90%; height: 360px;}
+    #onemain #eight section div:nth-child(1) span:nth-child(1){width: 100%; height: 220px;}
+    #onemain #eight section div:nth-child(2){width: 90%; height: 360px;}
+    #onemain #eight section div:nth-child(2) span:nth-child(1){width: 100%; height: 220px;}
+    #onemain #eight section div:nth-child(3){width: 90%; height: 360px;}
+    #onemain #eight section div:nth-child(3) span:nth-child(1){width: 100%; height: 220px;}
+
+
+    /*MAINTWO*/
+    #twomain #disc #disccon section:nth-child(1){width: 90%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 10px; padding: 40px 0; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 30px; background-color: rgba(0, 0, 0, 0.02); transition: all 0.24s;}
+    #twomain #disc #disccon section:nth-child(2){width: 90%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 10px; padding: 40px 0; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 30px; background-color: rgba(0, 0, 0, 0.02); transition: all 0.24s;}
+    #twomain #disc #disccon section:nth-child(3){width: 90%; height: auto; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 10px; padding: 40px 0; border: 1px solid rgba(0, 0, 0, 0.1); border-radius: 30px; background-color: rgba(0, 0, 0, 0.02); transition: all 0.24s;}
+    #twomain #four section div:nth-child(4){width: 240px; height: 135px; margin-top: 30px; border-radius: 4px; background: url(../image/png/et4.jpg) no-repeat; background-size: cover;}
+    #twomain #four section p:nth-child(5){width: 240px; height: 160px; margin: 30px; border-radius: 4px; background: url(../image/png/et5.jpg) no-repeat; background-size: cover;}
+    
+        #twomain #four section div:nth-child(6){width: 240px; height: 135px; margin-top: 30px; border-radius: 4px; background: url(../image/png/et1.jpg) no-repeat; background-size: cover;}
+    #twomain #four section p:nth-child(7){width: 240px; height: 160px; margin: 30px; border-radius: 4px; background: url(../image/png/et3.jpg) no-repeat; background-size: cover;}
+    
+
+    /*MAINTWO*/
+
+
+            /*MAINFOUR*/
+            #mainfour table tr:nth-child(1) td{width: 116px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(200, 200, 200); margin: 0 22px;}
+            #mainfour table tr:nth-child(2) td{width: 100px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(160, 160, 160);}
+            #mainfour table tr:nth-child(2) td:nth-child(1){width: 164px; user-select: none; display: flex; justify-content: flex-start; padding-left: 0px;}
+
+            #mainfour table tr:nth-child(3) td{width: 100px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(160, 160, 160);}
+            #mainfour table tr:nth-child(3) td:nth-child(1){width: 164px; user-select: none; display: flex; justify-content: flex-start; padding-left: 0px;}
+            #mainfour table tr:nth-child(4) td{width: 100px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(160, 160, 160);}
+            #mainfour table tr:nth-child(4) td:nth-child(1){width: 164px; user-select: none; display: flex; justify-content: flex-start; padding-left: 0px;}
+            #mainfour table tr:nth-child(5) td{width: 100px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(160, 160, 160);}
+            #mainfour table tr:nth-child(5) td:nth-child(1){width: 164px; user-select: none; display: flex; justify-content: flex-start; padding-left: 0px;}
+            #mainfour table tr:nth-child(1) td:nth-child(2){display: none;}
+            #mainfour table tr:nth-child(2) td:nth-child(2){display: none;}
+            #mainfour table tr:nth-child(3) td:nth-child(2){display: none;}
+            #mainfour table tr:nth-child(4) td:nth-child(2){display: none;}
+            #mainfour table tr:nth-child(5) td:nth-child(2){display: none;}
+            /*MAINFOUR*/
+
+
+            /*MAINFIVE*/
+            #fivemain #one section h1{width: 90%; margin: 20px 0 10px 0; font-size: 34px; text-align: center; text-transform: uppercase; letter-spacing: 1px; color: white;}
+            #fivemain #two #twocon section:nth-child(2) div{width: 222px; height: 318px; background: url(../image/png/one.png) no-repeat; background-size: cover;}
+            #fivemain #three #twocon section:nth-child(2) div{width: 222px; height: 329px; background: url(../image/png/two.png) no-repeat; background-size: cover;}
+            #fivemain #four #twocon section:nth-child(2) div{width: 222px; height: 329px; background: url(../image/png/two.png) no-repeat; background-size: cover;}
+            #fivemain #five #twocon section:nth-child(2) iframe{width: 100%; height: 128px; background: url(../image/png/three.png) no-repeat; background-size: cover;}
+            #onemain #lock img{width: 340px; border-radius: 10px;}
+            #nft #one h2{width: 90%; margin: 20px 0 10px 0; font-size: 22px; text-align: center; text-transform: uppercase; font-weight: normal; letter-spacing: 4px; color: white;}
+            #nft #one span{max-width: 80%; font-size: 12px; text-align: center; color: rgb(220, 220, 220);}
+}           /*MAINFIVE*/
+
+@media all and (max-width: 380px)
+{
+            /*MAINFOUR*/
+            #mainfour table tr:nth-child(1) td{width: 116px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(200, 200, 200); margin: 0 20px;}
+            #mainfour table tr:nth-child(2) td{width: 100px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(160, 160, 160);}
+            #mainfour table tr:nth-child(2) td:nth-child(1){width: 164px; user-select: none; display: flex; justify-content: flex-start; padding-left: 10px;}
+            #mainfour table tr:nth-child(1) td:nth-child(2){display: none;}
+            #mainfour table tr:nth-child(2) td:nth-child(2){display: none;}
+            #mainfour table tr:nth-child(3) td{width: 100px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(160, 160, 160);}
+            #mainfour table tr:nth-child(3) td:nth-child(1){width: 164px; user-select: none; display: flex; justify-content: flex-start; padding-left: 10px;}
+            #mainfour table tr:nth-child(3) td:nth-child(2){display: none;}
+            #mainfour table tr:nth-child(4) td{width: 100px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(160, 160, 160);}
+            #mainfour table tr:nth-child(4) td:nth-child(1){width: 164px; user-select: none; display: flex; justify-content: flex-start; padding-left: 10px;}
+            #mainfour table tr:nth-child(4) td:nth-child(2){display: none;}
+            #mainfour table tr:nth-child(5) td{width: 100px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(160, 160, 160);}
+            #mainfour table tr:nth-child(5) td:nth-child(1){width: 164px; user-select: none; display: flex; justify-content: flex-start; padding-left: 10px;}
+            #mainfour table tr:nth-child(5) td:nth-child(2){display: none;}
+            /*MAINFOUR*/
+
+
+            /*MAINFIVE*/
+            #fivemain #two #twocon section:nth-child(1) #bscc{width: 90%; height: auto; display: flex; justify-content: center; align-items: center; margin-top: 30px; padding: 10px 0; text-align: center; border: 1px solid rgba(255, 255, 255, 0.1); font-size: 8px; letter-spacing: 0.4px; border-radius: 6px; color: rgb(160, 160, 160); box-shadow: 0 0 4px rgb(82, 82, 82); text-transform: uppercase; color: white; background-color: rgba(0, 0, 0, 0.2); transition: all 0.24s;}
+            /*MAINFIVE*/
+            #onemain #lock img{width: 300px; border-radius: 10px;}
+        }
+
+@media all and (max-width: 340px)
+{
+    #onemain #three section:nth-child(2){width: 280px; height: auto; display: flex; justify-content: center; align-items: center;}
+    #onemain #three section:nth-child(2) div{width: 210px; height: 210px; background: url(../image/png/chart.png) no-repeat; background-size: cover;}
+
+                /*MAINTWO*/
+                #twomain #four section h4{width: 90%; user-select: none; margin: 10px 0; font-size: 14px; text-align: center; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(160, 160, 160);}
+                #twomain #four section div{width: 180px; height: 101px; margin-top: 40px; border-radius: 4px; background: url(../image/gif/Tutorial.gif) no-repeat; background-size: cover;}
+                #twomain #four section p{width: 180px; height: 120px; margin: 10px; border-radius: 4px; background: url(../image/jpg/game.jpg) no-repeat; background-size: cover;}
+                /*MAINTWO*/
+
+                /*MAINFOUR*/
+                #mainfour table tr{width: 300px !important}
+                #mainfour table tr:nth-child(1) td{width: 130px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(200, 200, 200);}
+                #mainfour table tr:nth-child(2) td{width: 140px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(160, 160, 160);}
+                #mainfour table tr:nth-child(2) td:nth-child(3){width: 164px; user-select: none; display: flex; justify-content: flex-start; padding-left: 40px;}
+                #mainfour table tr:nth-child(1) td:nth-child(2){display: none;}
+                #mainfour table tr:nth-child(2) td:nth-child(2){display: none;}
+                #mainfour table tr:nth-child(3) td{width: 140px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(160, 160, 160);}
+                #mainfour table tr:nth-child(3) td:nth-child(3){width: 164px; user-select: none; display: flex; justify-content: flex-start; padding-left: 40px;}
+                #mainfour table tr:nth-child(3) td:nth-child(2){display: none;}
+                #mainfour table tr:nth-child(4) td{width: 140px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(160, 160, 160);}
+                #mainfour table tr:nth-child(4) td:nth-child(3){width: 164px; user-select: none; display: flex; justify-content: flex-start; padding-left: 40px;}
+                #mainfour table tr:nth-child(4) td:nth-child(2){display: none;}
+                #mainfour table tr:nth-child(5) td{width: 140px; user-select: none; display: flex; justify-content: center; align-items: center; flex-direction: row; font-size: 12px; text-transform: uppercase; letter-spacing: 0.8px; color: rgb(160, 160, 160);}
+                #mainfour table tr:nth-child(5) td:nth-child(3){width: 164px; user-select: none; display: flex; justify-content: flex-start; padding-left: 40px;}
+                #mainfour table tr:nth-child(5) td:nth-child(2){display: none;}
+                /*MAINFOUR*/
+
+                #nft #one img{width: 220px; user-select: none; animation-name: animation; animation-duration: 4s; animation-iteration-count: infinite;}
+                #nft #three img{width: 240px; user-select: none; margin: 20px; transition: all 0.24s;}
+                #onemain #lock img{width: 240px; border-radius: 10px;}
+}
+
+/*WL FC âˆž NC US*/
